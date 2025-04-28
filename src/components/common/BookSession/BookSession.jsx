@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { ArrowPathIcon, CheckIcon  } from '@heroicons/react/24/solid'; 
+import emailjs from "@emailjs/browser";
 
 const BookSession = ({onClose}) => {
     const [sessionDetails, setSessionDetails] = useState({
@@ -21,6 +22,29 @@ const BookSession = ({onClose}) => {
           console.log('Finished sending');
           setEmailStatus('success');
         }, 2000);
+
+        e.preventDefault();
+
+        // emailjs
+        //   .send(
+        //     "your_service_id",    // from EmailJS dashboard
+        //     "your_template_id",   // from EmailJS dashboard
+        //     {
+        //       from_email: formData.email,
+        //       message: formData.message,
+        //     },
+        //     "your_public_key"      // from EmailJS dashboard
+        //   )
+        //   .then(
+        //     (result) => {
+        //       console.log("Email sent successfully:", result.text);
+        //       alert("Message sent!");
+        //     },
+        //     (error) => {
+        //       console.log("Failed to send email:", error.text);
+        //       alert("Failed to send message.");
+        //     }
+        //   );
     }
 
     return (
