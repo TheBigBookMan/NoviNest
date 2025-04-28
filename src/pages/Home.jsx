@@ -21,7 +21,7 @@ const Home = () => {
 
 
     return (
-        <div className='flex flex-col w-full h-full p-4 relative'>
+        <div className='flex flex-col w-full h-full relative'>
             <AnimatePresence>
                 {openBooking && (
                     <BookSession onClose={() => setOpenBooking(false)} />

@@ -1,7 +1,7 @@
 const Info = () => {
     return (
-        <div className='flex flex-col gap-8 h-screen -mt-12'>
-            <p className='text-lg font-cinzel font-bold'>Welcome to Novi Nest - Where Understanding Nurtures Growth</p>
+        <div className='flex flex-col gap-8 h-screen -mt-12  p-4'>
+            <p className='text-3xl font-cinzel font-bold'>Welcome to Novi Nest - Where Understanding Nurtures Growth</p>
 
             <div className='flex flex-col gap-4 text-sm'>
 

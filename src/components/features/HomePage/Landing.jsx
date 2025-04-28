@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Landing = () => {
     return (
-        <div className='flex flex-col h-screen justify-center items-center'>
+        <div className='flex flex-col h-screen justify-center items-center  p-4'>
             <div className='flex flex-col gap-4 -mt-60 items-center'>
                 <img src={nestSVG} className='h-[220px] w-[280px]' />
 
