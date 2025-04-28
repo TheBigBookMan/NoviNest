@@ -10,7 +10,7 @@ import {Routes, Route} from 'react-router-dom';
 
 function App() {
     return (
-        <div className='flex flex-col min-w-screen min-h-screen'>
+        <div className='flex flex-col min-w-screen min-h-screen text-[#333333] font-poppins'>
             <Navbar />
             
             <Routes>
