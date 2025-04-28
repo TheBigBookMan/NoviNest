@@ -28,16 +28,16 @@ const Home = () => {
                 )}
             </AnimatePresence>
 
-            <div onClick={() => setOpenBooking(!openBooking)} className="fixed bottom-2 left-2 z-48 w-[120px] h-[60px] ">
+            <div onClick={() => setOpenBooking(!openBooking)} className="fixed bottom-2 left-2 z-48  h-[60px] ">
                 {showButton && (
                     <motion.div
                         
                         initial={{ opacity: 0, x: -100 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, ease: "easeOut" }}
-                        className={`h-full w-full  hover:cursor-pointer flex items-center justify-center rounded-xl ${openBooking ? 'bg-[#606759]' : 'bg-[#858D7E] hover:bg-[#606759]'}`}
+                        className={`h-full w-full px-2 hover:cursor-pointer flex items-center justify-center rounded-xl ${openBooking ? 'bg-[#606759]' : 'bg-[#858D7E] hover:bg-[#606759]'}`}
                     >
-                        <p className="text-white">Book Session</p>
+                        <p className="text-white">Book a Session</p>
                     </motion.div>
                 )}
             </div>
