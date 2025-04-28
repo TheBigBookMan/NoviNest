@@ -11,7 +11,7 @@ const BookSession = ({onClose}) => {
     });
     const [emailStatus, setEmailStatus] = useState('idle');
     
-    const sendEmail = () => {
+    const sendEmail = (e) => {
         console.log(sessionDetails);
         // TODO set up the sending of email- use the emailjs library
 
