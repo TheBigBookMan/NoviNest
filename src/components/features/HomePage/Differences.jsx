@@ -1,31 +1,66 @@
+import { motion } from "framer-motion";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+
+const containerVariants = {
+    hidden: {},
+    visible: {
+        transition: {
+        staggerChildren: 0.3,
+        },
+    },
+};
+
+const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1.5, ease: "easeOut" } },
+};
+
 const Differences = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, amount: 0.2 }); 
+
     return (
-        <div className='flex flex-col h-screen'>
-            <p className='font-bold'>Our Differences:</p>
+        <motion.div
+            ref={ref}
+            variants={containerVariants}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            className="flex flex-col h-screen p-4 mt-20 pt-20 bg-[#F5F5F3]"
+        >
+            <p className="text-3xl font-cinzel font-bold text-[#858D7E]">Our Differences</p>
 
-            <div className='flex flex-col gap-2'>
-                <div className='flex flex-col'>
-                    <p className='italic underline'>Child-Centered Approach</p>
-                    <p>Putting your child at the heart of everything we do.</p>
-                </div>
-
-                <div className='flex flex-col'>
-                    <p className='italic underline'>Empowerment Through Understanding</p>
-                    <p>Creating an environment where children and families feel heard and supported.</p>
-                </div>
-
-                <div className='flex flex-col'>
-                    <p className='italic underline'>Accessible and Stress-Free</p>
-                    <p>Making assessments easier by meeting children where they are.</p>
-                </div>
-
-                <div className='flex flex-col'>
-                    <p className='italic underline'>Collaborative Care</p>
-                    <p>Partnering with families and educators for your child's success.</p>
-                </div>
+            <div className="flex flex-col gap-6 mt-4">
+                {[
+                {
+                    title: "Child-Centered Approach",
+                    description: "Putting your child at the heart of everything we do.",
+                },
+                {
+                    title: "Empowerment Through Understanding",
+                    description: "Creating an environment where children and families feel heard and supported.",
+                },
+                {
+                    title: "Accessible and Stress-Free",
+                    description: "Making assessments easier by meeting children where they are.",
+                },
+                {
+                    title: "Collaborative Care",
+                    description: "Partnering with families and educators for your child's success.",
+                },
+                ].map((item, idx) => (
+                    <motion.div
+                        key={idx}
+                        variants={itemVariants}
+                        className="flex flex-col"
+                    >
+                        <p className="italic text-[#B25D3E]">{item.title}</p>
+                        <p className='text-[#4B5563] leading-relaxed'>{item.description}</p>
+                    </motion.div>
+                ))}
             </div>
-        </div>
-    )
-}
+        </motion.div>
+    );
+};
 
 export default Differences;
