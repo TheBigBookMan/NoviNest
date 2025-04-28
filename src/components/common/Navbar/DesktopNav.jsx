@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import {FacebookLogo, InstagramLogo, LinkedinLogo} from "@phosphor-icons/react";
-import logo from '../../../assets/Logo-large.png';
+import logoSVG from '../../../assets/logo-svg.svg';
 
 const DesktopNav = () => {
     const {pathname} = useLocation();
@@ -8,7 +8,7 @@ const DesktopNav = () => {
     return (
         <div className='hidden md:flex justify-between w-full'>
             <Link to='/'>
-                <img src={logo} className='w-20' />
+                <img src={logoSVG} className='w-20' />
             </Link>
 
             <div className="flex gap-4 w-full">
@@ -43,7 +43,7 @@ const DesktopNav = () => {
                         <LinkedinLogo size={38} color='#00000' />
                     </a>
                     
-                    <a href='isntagram.com' target='_blank' >
+                    <a href='https://www.instagram.com/novinestpsychology/' target='_blank' >
                         <InstagramLogo size={38} color='#00000' />
                     </a>
                 </div>
