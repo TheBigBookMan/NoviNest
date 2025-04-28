@@ -1,12 +1,27 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { ArrowPathIcon, CheckIcon  } from '@heroicons/react/24/solid'; 
 
 const BookSession = ({onClose}) => {
     const [sessionDetails, setSessionDetails] = useState({
         email: '',
         name: '',
         message: ''
-    })
+    });
+    const [emailStatus, setEmailStatus] = useState('idle');
+    
+    const sendEmail = () => {
+        console.log(sessionDetails);
+        // TODO set up the sending of email- use the emailjs library
+
+        setEmailStatus('sending');
+  
+        // fake timeout to simulate sending
+        setTimeout(() => {
+          console.log('Finished sending');
+          setEmailStatus('success');
+        }, 2000);
+    }
 
     return (
         <motion.div
@@ -35,12 +50,29 @@ const BookSession = ({onClose}) => {
 
             </div>
 
-            <button
-                onClick={onClose}
-                className="mt-6 bg-[#4B5563] hover:bg-[#374151] text-white font-semibold px-5 py-2 rounded-lg shadow-md transition"
+            <div className="flex gap-4">
+                <button
+                    onClick={onClose}
+                    className="mt-6 bg-[#C4A5A5] hover:bg-[#ae9696] text-white font-semibold px-5 py-2 rounded-lg shadow-md transition"
                 >
-                Close
-            </button>
+                    Close
+                </button>
+
+                <button
+                    disabled={emailStatus !== 'idle'}
+                    onClick={sendEmail}
+                    className="mt-6 bg-[#6A7F96] hover:bg-[#596c81] text-white font-semibold px-5 py-2 rounded-lg shadow-md transition flex items-center justify-center min-w-[100px]"
+                >
+                    {emailStatus === 'sending' ? (
+                            <ArrowPathIcon className="h-6 w-6 animate-spin" />
+                        ) : emailStatus === 'success' ? (
+                            <CheckIcon className="h-6 w-6" />
+                        ) : (
+                            "Send"
+                        )
+                    }
+                </button>
+            </div>
         </motion.div>
     )
 }
