@@ -7,6 +7,7 @@ import AboutUs from './pages/AboutUs';
 import Resources from './pages/Resources';
 import Contact from './pages/Contact';
 import {Routes, Route} from 'react-router-dom';
+import Fees from './pages/Fees';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Route path='/about-us' element={<AboutUs />} />
                 <Route path='/resources' element={<Resources />} />
                 <Route path='/contact' element={<Contact />} />
+                <Route path='/fees' element={<Fees />} />
 
             </Routes>
         </div>
