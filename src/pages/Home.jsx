@@ -6,7 +6,7 @@ import Services from "../components/features/HomePage/Services";
 import BookSession from "../components/common/BookSession/BookSession";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
-import Contact from "../components/features/HomePage/Contact";
+import Contact from "../components/common/Contact/Contact";
 
 const Home = () => {
     const [openBooking, setOpenBooking] = useState(false);
