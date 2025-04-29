@@ -26,11 +26,11 @@ const Differences = () => {
             variants={containerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            className="flex flex-col h-screen p-4 mt-20 pt-20 bg-[#F5F5F3]"
+            className="flex flex-col h-screen p-4  pt-20 bg-[#F5F5F3]"
         >
             <p className="text-3xl font-cinzel font-bold text-[#858D7E]">Our Differences</p>
 
-            <div className="flex flex-col gap-6 mt-4">
+            <div className="flex flex-col gap-6 mt-4 text-sm">
                 {[
                 {
                     title: "Child-Centered Approach",
