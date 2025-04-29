@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logoSVG from '../../../assets/nest-svg.svg';
+import logoSVG from '../../../assets/nest-svg.svg'; 
 
 const Contact = () => {
 
@@ -18,17 +18,12 @@ const Contact = () => {
     };
 
     return (
-        <div className='flex flex-col h-screen w-full  p-4 mt-20 text-sm gap-12'>
+        <div className='flex flex-col h-fit w-full  p-4 mt-20 text-sm gap-12'>
             <div className='flex justify-center'>
                 <img src={logoSVG} className='w-32' />
             </div>
 
             <div className='flex flex-col  gap-4'>
-                <div className='flex flex-col'>
-                    <p className='font-cinzel text-lg'>Our Location</p>
-                    <p>Online</p>
-                </div>
-
                 <div className='flex flex-col'>
                     <p className='font-cinzel text-lg'>Contact Novi Nest</p>
                     <a href="mailto:hello@novinestpsychology.com.au" className='underline'>hello@novinestpsychology.com.au</a>
