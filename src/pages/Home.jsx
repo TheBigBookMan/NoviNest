@@ -6,10 +6,12 @@ import Services from "../components/features/HomePage/Services";
 import BookSession from "../components/common/BookSession/BookSession";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
+import Contact from "../components/features/HomePage/Contact";
 
 const Home = () => {
     const [openBooking, setOpenBooking] = useState(false);
     const [showButton, setShowButton] = useState(false);
+    const [atBottom, setAtBottom] = useState(false);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -19,6 +21,20 @@ const Home = () => {
         return () => clearTimeout(timer);
     }, []);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            const viewportHeight = window.innerHeight;
+            const fullHeight = document.body.scrollHeight;
+        
+            const distanceFromBottom = fullHeight - (scrollY + viewportHeight);
+        
+            setAtBottom(distanceFromBottom < 150);
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
         <div className='flex flex-col w-full h-full relative'>
@@ -27,20 +43,22 @@ const Home = () => {
                     <BookSession onClose={() => setOpenBooking(false)} />
                 )}
             </AnimatePresence>
-
-            <div onClick={() => setOpenBooking(!openBooking)} className="fixed bottom-2 left-2 z-48  h-[60px] ">
-                {showButton && (
+            
+            <AnimatePresence>
+                {showButton && !atBottom && (
                     <motion.div
-                        
+                        key="book-button"
+                        onClick={() => setOpenBooking(!openBooking)}
                         initial={{ opacity: 0, x: -100 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, ease: "easeOut" }}
-                        className={`h-full w-full px-2 hover:cursor-pointer flex items-center justify-center rounded-xl ${openBooking ? 'bg-[#606759]' : 'bg-[#858D7E] hover:bg-[#606759]'}`}
+                        exit={{ opacity: 0, x: -100 }}
+                        transition={{ duration: 0.4, ease: "easeOut" }}
+                        className="fixed bottom-2 left-2 z-48 h-[60px] w-[160px] px-2 hover:cursor-pointer flex items-center justify-center rounded-xl bg-[#B25D3E] hover:bg-[#606759]"
                     >
                         <p className="text-white">Book a Session</p>
                     </motion.div>
                 )}
-            </div>
+            </AnimatePresence>
 
             <Landing />
 
@@ -49,6 +67,8 @@ const Home = () => {
             <Differences />
 
             <Services />
+
+            <Contact />
 
             <Footer />
         </div>

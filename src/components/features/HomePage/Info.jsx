@@ -1,6 +1,6 @@
 const Info = () => {
     return (
-        <div className='flex flex-col gap-8 h-screen -mt-12  p-4'>
+        <div className='flex flex-col gap-8 h-fit -mt-12  p-4 bg-[#858D7E] text-slate-100'>
             <p className='text-3xl font-cinzel font-bold'>Welcome to Novi Nest - Where Understanding Nurtures Growth</p>
 
             <div className='flex flex-col gap-4 text-sm'>
