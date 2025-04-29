@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import nestSVG from '../../../assets/nest-svg.svg';
 import { Link, useLocation } from "react-router-dom";
 import { HomeIcon, ListBulletIcon, UserIcon, BookOpenIcon, AtSymbolIcon } from '@heroicons/react/24/outline';
-import {FacebookLogo, InstagramLogo, LinkedinLogo} from "@phosphor-icons/react";
+import {FacebookLogo, InstagramLogo, LinkedinLogo, CurrencyDollarSimple} from "@phosphor-icons/react";
 
 const MobileNav = () => {
     const [navOpen, setNavOpen] = useState(false);
@@ -48,27 +48,32 @@ const MobileNav = () => {
                             transition={{ type: "spring", stiffness: 300, damping: 25 }}
                             className="flex flex-col border-2 h-auto w-full absolute top-20 bg-white shadow-lg p-4 z-50 right-0"
                         >
-                            <Link onClick={() => setNavOpen(false)} to="/" className={`py-6 border-b rounded-xl justify-between flex items-center px-4 ${pathname === '/' ? 'bg-[#858D7E] text-white' : 'hover:bg-[#858D7E] hover:text-white'} `}>
+                            <Link onClick={() => setNavOpen(false)} to="/" className={`py-4 border-b rounded-xl justify-between flex items-center px-4 ${pathname === '/' ? 'bg-[#858D7E] text-white' : 'hover:bg-[#858D7E] hover:text-white'} `}>
                                 <p>Home</p>
                                 <HomeIcon className='w-8' />
                             </Link>
 
-                            <Link onClick={() => setNavOpen(false)} to="/services" className={`py-6 border-b rounded-xl justify-between flex items-center px-4  ${pathname === '/services' ? 'bg-[#858D7E] text-white' : 'hover:bg-[#858D7E] hover:text-white'}`}>
+                            <Link onClick={() => setNavOpen(false)} to="/services" className={`py-4 border-b rounded-xl justify-between flex items-center px-4  ${pathname === '/services' ? 'bg-[#858D7E] text-white' : 'hover:bg-[#858D7E] hover:text-white'}`}>
                                 <p>Services</p>
                                 <ListBulletIcon className='w-8' />
                             </Link>
 
-                            <Link onClick={() => setNavOpen(false)} to="/about-us" className={`py-6 border-b rounded-xl justify-between flex items-center px-4  ${pathname === '/about-us' ? 'bg-[#858D7E] text-white' : 'hover:bg-[#858D7E] hover:text-white'}`}>
+                            <Link onClick={() => setNavOpen(false)} to="/about-us" className={`py-4 border-b rounded-xl justify-between flex items-center px-4  ${pathname === '/about-us' ? 'bg-[#858D7E] text-white' : 'hover:bg-[#858D7E] hover:text-white'}`}>
                                 <p>About Us</p>
                                 <UserIcon className='w-8' />
                             </Link>
+
+                            <Link onClick={() => setNavOpen(false)} to="/fees" className={`py-4 border-b rounded-xl justify-between flex items-center px-4  ${pathname === '/fees' ? 'bg-[#858D7E] text-white' : 'hover:bg-[#858D7E] hover:text-white'}`}>
+                                <p>Fees</p>
+                                <CurrencyDollarSimple size={32} />
+                            </Link>
                             
-                            <Link onClick={() => setNavOpen(false)} to="/resources" className={`py-6 border-b rounded-xl justify-between flex items-center px-4  ${pathname === '/resources' ? 'bg-[#858D7E] text-white' : 'hover:bg-[#858D7E] hover:text-white'}`}>
+                            <Link onClick={() => setNavOpen(false)} to="/resources" className={`py-4 border-b rounded-xl justify-between flex items-center px-4  ${pathname === '/resources' ? 'bg-[#858D7E] text-white' : 'hover:bg-[#858D7E] hover:text-white'}`}>
                                 <p>Resources</p>
                                 <BookOpenIcon className='w-8' />
                             </Link>
 
-                            <Link onClick={() => setNavOpen(false)} to="/contact" className={`py-6 border-b rounded-xl justify-between flex items-center px-4  ${pathname === '/contact' ? 'bg-[#858D7E] text-white' : 'hover:bg-[#858D7E] hover:text-white'}`}>
+                            <Link onClick={() => setNavOpen(false)} to="/contact" className={`py-4 border-b rounded-xl justify-between flex items-center px-4  ${pathname === '/contact' ? 'bg-[#858D7E] text-white' : 'hover:bg-[#858D7E] hover:text-white'}`}>
                                 <p>Contact</p>
                                 <AtSymbolIcon className='w-8' />
                             </Link>
