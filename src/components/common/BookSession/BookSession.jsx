@@ -53,9 +53,12 @@ const BookSession = ({onClose}) => {
         animate={{opacity: 1, y: 0}}
         exit={{ opacity: 0, y: 40 }}
         transition={{duration: 0.25, ease: 'easeOut'}}
-        className="fixed flex flex-col items-between bottom-20 min-h-[380px] max-h-fit p-4 bg-slate-200 rounded-lg shadow-xl w-[95%] ">
+        className="fixed flex flex-col items-between bottom-20 min-h-[380px] max-h-fit p-4 bg-slate-200 rounded-lg shadow-xl w-[95%] ml-2">
             <div className='flex flex-col gap-2'>
-                <h2 className="text-2xl ">Book a Session</h2>
+                <div className='flex flex-col'>
+                    <h2 className="text-2xl ">Book a Session</h2>
+                    <p>Schedule a free 15-minute chat</p>
+                </div>
                 
                 <div className='flex flex-col'>
                     <p>Email:</p>
@@ -69,7 +72,7 @@ const BookSession = ({onClose}) => {
 
                 <div className='flex flex-col'>
                     <p>Message:</p>
-                    <textarea className='rounded-lg border border-gray-300 bg-white p-3 text-sm text-gray-900 shadow-sm placeholder-gray-400 focus:border-[#858D7E] focus:ring-[#858D7E] focus:outline-none focus:ring-1 transition resize-none' rows={6} onChange={(e) => setSessionDetails({...sessionDetails, message: e.target.value})}></textarea>
+                    <textarea className='rounded-lg border border-gray-300 bg-white p-3 text-sm text-gray-900 shadow-sm placeholder-gray-400 focus:border-[#858D7E] focus:ring-[#858D7E] focus:outline-none focus:ring-1 transition resize-none' rows={5} onChange={(e) => setSessionDetails({...sessionDetails, message: e.target.value})}></textarea>
                 </div>
 
             </div>
