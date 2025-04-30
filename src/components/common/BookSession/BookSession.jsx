@@ -56,7 +56,7 @@ const BookSession = ({onClose}) => {
         className="fixed flex flex-col items-between bottom-20 min-h-[380px] max-h-fit p-4 bg-slate-200 rounded-lg shadow-xl w-[95%] ml-2">
             <div className='flex flex-col gap-2'>
                 <div className='flex flex-col'>
-                    <h2 className="text-2xl ">Book a Session</h2>
+                    <h2 className="text-2xl ">Book an Assessment</h2>
                     <p>Schedule a free 15-minute chat</p>
                 </div>
                 
