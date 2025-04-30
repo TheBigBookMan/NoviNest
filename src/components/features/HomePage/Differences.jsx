@@ -34,19 +34,19 @@ const Differences = () => {
                 {[
                 {
                     title: "Child-Centered Approach",
-                    description: "Putting your child at the heart of everything we do.",
+                    description: "We put your child at the heart of everything we do.",
                 },
                 {
                     title: "Empowerment Through Understanding",
-                    description: "Creating an environment where children and families feel heard and supported.",
+                    description: "We are passionate about creating an environment where children and families feel heard and supported.",
                 },
                 {
-                    title: "Accessible and Stress-Free",
-                    description: "Making assessments easier by meeting children where they are.",
+                    title: "Accessibility",
+                    description: "We make assessments easier by meeting children where they are.",
                 },
                 {
                     title: "Collaborative Care",
-                    description: "Partnering with families and educators for your child's success.",
+                    description: "We partner with educators for your child's success.",
                 },
                 ].map((item, idx) => (
                     <motion.div
