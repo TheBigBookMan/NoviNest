@@ -43,7 +43,7 @@ const Qualifications = () => {
                     "Master of Psychology (Clinical), Flinders University",
                     "Bachelor of Psychology (Honours), Flinders University",
                 ].map((text, i) => (
-                    <motion.li key={i} variants={itemVariants} className="list-disc text-sm">
+                    <motion.li key={i} variants={itemVariants} className="list-disc text-sm text-[#B25D3E]">
                         {text}
                     </motion.li>
                 ))}
