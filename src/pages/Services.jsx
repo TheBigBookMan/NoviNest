@@ -17,14 +17,14 @@ const Services = () => {
             </div>
 
             <div className="flex flex-col p-4 gap-2">
-                <p className=' font-cinzel'>Consultation with Schools or Allied Health Providers</p>
+                <p className=' font-cinzel text-lg'>Consultation with Schools or Allied Health Providers</p>
                 <p className='text-sm'>Following an assessment, we're happy to consult with teachers or allied health professionals to clarify recommendations and help guide ongoing support.</p>
             </div>
 
             <Expect />
 
             <div className='flex flex-col p-4 gap-2'>
-                <p className=' font-cinzel'>A Note on Timeframes</p>
+                <p className=' font-cinzel text-lg'>A Note on Timeframes</p>
                 <p className='text-sm'>We aim to complete the entire assessment process within 4 to 6 weeks. While we keep things moving behind the scenes, we also take our time where it matters most.</p>
             </div>
 
