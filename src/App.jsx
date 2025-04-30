@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
 import Navbar from './components/common/Navbar/Navbar';
 import Footer from './components/common/Footer/Footer';
 import Home from './pages/Home';
@@ -6,13 +6,24 @@ import Services from './pages/Services';
 import AboutUs from './pages/AboutUs';
 import Resources from './pages/Resources';
 import Contact from './pages/Contact';
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, useLocation } from 'react-router-dom';
 import Fees from './pages/Fees';
+
+const ScrollToTop = () => {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    }, [pathname]);
+
+    return null;
+};
 
 function App() {
     return (
         <div className='flex flex-col min-w-screen min-h-screen text-[#333333] font-poppins'>
             <Navbar />
+            <ScrollToTop />
             
             <Routes>
 

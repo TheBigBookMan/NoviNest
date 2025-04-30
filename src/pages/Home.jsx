@@ -53,7 +53,7 @@ const Home = () => {
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: -100 }}
                         transition={{ duration: 0.4, ease: "easeOut" }}
-                        className="fixed bottom-2 left-2 z-48 h-[60px] w-[160px] px-2 hover:cursor-pointer flex items-center justify-center rounded-xl bg-[#B25D3E] hover:bg-[#606759]"
+                        className="fixed bottom-2 left-2 z-48 h-[60px] w-[160px] px-2 hover:cursor-pointer flex items-center justify-center rounded-xl bg-[#4B5563] hover:bg-[#3a4048]"
                     >
                         <p className="text-white">Book a Session</p>
                     </motion.div>
