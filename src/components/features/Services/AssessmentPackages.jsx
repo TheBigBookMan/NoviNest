@@ -6,8 +6,8 @@ const PackageItem = ({ title, description, includes }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="flex flex-col gap-4 text-sm border-b pb-4">
-            <p className="font-playfair text-lg text-[#B25D3E]">{title}</p>
+        <div id={title.split(' ').join('-').toLowerCase()} className="flex flex-col gap-4 text-sm border-b pb-4 scroll-mt-24">
+            <p  className="font-playfair text-lg text-[#B25D3E]">{title}</p>
             <p>{description}</p>
 
             <button
@@ -102,7 +102,7 @@ const AssessmentPackages = () => {
         <div className="flex flex-col p-4 gap-6">
             <p className='font-cinzel text-xl'>Assessment Packages</p>
             {packages.map((pkg, idx) => (
-                <PackageItem key={idx} {...pkg} />
+                <PackageItem  key={idx} {...pkg} />
             ))}
         </div>
     );
