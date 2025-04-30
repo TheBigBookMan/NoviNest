@@ -14,7 +14,7 @@ const PackageItem = ({ title, description, includes }) => {
                 onClick={() => setIsOpen(!isOpen)}
                 className="flex items-center justify-between cursor-pointer"
             >
-                <p className="italic font-cinzel">Includes</p>
+                <p className="italic font-cinzel text-base">Includes</p>
                 <motion.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.3 }}

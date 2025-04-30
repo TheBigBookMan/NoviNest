@@ -68,8 +68,8 @@ const MobileNav = () => {
                                 <CurrencyDollarSimple size={32} />
                             </Link>
                             
-                            <Link onClick={() => setNavOpen(false)} to="/resources" className={`py-4 border-b rounded-xl justify-between flex items-center px-4  ${pathname === '/resources' ? 'bg-[#858D7E] text-white' : 'hover:bg-[#858D7E] hover:text-white'}`}>
-                                <p>Resources</p>
+                            <Link onClick={() => setNavOpen(false)} to="/blog" className={`py-4 border-b rounded-xl justify-between flex items-center px-4  ${pathname === '/blog' ? 'bg-[#858D7E] text-white' : 'hover:bg-[#858D7E] hover:text-white'}`}>
+                                <p>Blog</p>
                                 <BookOpenIcon className='w-8' />
                             </Link>
 

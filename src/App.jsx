@@ -4,7 +4,7 @@ import Footer from './components/common/Footer/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import AboutUs from './pages/AboutUs';
-import Resources from './pages/Resources';
+import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import {Routes, Route, useLocation } from 'react-router-dom';
 import Fees from './pages/Fees';
@@ -30,7 +30,7 @@ function App() {
                 <Route path='/' index element={<Home />} />
                 <Route path='/services' element={<Services />} />
                 <Route path='/about-us' element={<AboutUs />} />
-                <Route path='/resources' element={<Resources />} />
+                <Route path='/blog' element={<Blog />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/fees' element={<Fees />} />
 
