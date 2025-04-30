@@ -26,7 +26,7 @@ const Differences = () => {
             variants={containerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            className="flex flex-col h-screen p-4  pt-20 bg-[#F5F5F3]"
+            className="flex flex-col h-fit p-4  pt-20 bg-[#F5F5F3] "
         >
             <p className="text-3xl font-cinzel font-bold text-[#858D7E]">Our Differences</p>
 

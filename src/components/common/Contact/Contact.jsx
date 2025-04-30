@@ -18,7 +18,7 @@ const Contact = () => {
     };
 
     return (
-        <div className='flex flex-col h-fit w-full  p-4  text-sm gap-12'>
+        <div className='flex flex-col h-fit w-full  p-4 py-12 text-sm gap-12'>
             <div className='flex justify-center'>
                 <img src={logoSVG} className='w-32' />
             </div>

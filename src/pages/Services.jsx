@@ -3,6 +3,7 @@ import Footer from "../components/common/Footer/Footer";
 import AssessmentPackages from "../components/features/Services/AssessmentPackages";
 import CognitiveAssessment from "../components/features/Services/CognitiveAssessment";
 import Expect from "../components/features/Services/Expect";
+import Contact from "../components/common/Contact/Contact";
 
 const Services = () => {
     return (
@@ -16,7 +17,7 @@ const Services = () => {
                 <p className='text-sm italic'>If you require a modified assessment package, or are seeking a different type of assessment not listed here, please don't hesitate to get in touch We're happy to discuss your needs and determine whether we can offer a tailored solution to support your goals.</p>
             </div>
 
-            <div className="flex flex-col p-4 gap-2">
+            <div id="consultation-with-schools-or-allied-health" className="flex flex-col p-4 gap-2 scroll-mt-20">
                 <p className=' font-cinzel text-lg'>Consultation with Schools or Allied Health Providers</p>
                 <p className='text-sm'>Following an assessment, we're happy to consult with teachers or allied health professionals to clarify recommendations and help guide ongoing support.</p>
             </div>
@@ -33,6 +34,8 @@ const Services = () => {
                     <p className='underline text-lg font-cinzel'>A Note on Fees</p>
                 </Link>
             </div>
+
+            <Contact />
 
             <Footer />
         </div>
