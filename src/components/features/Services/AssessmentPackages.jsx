@@ -12,7 +12,7 @@ const PackageItem = ({ title, description, includes }) => {
 
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center justify-between cursor-pointer"
+                className="flex items-center justify-between cursor-pointer mt-4"
             >
                 <p className="italic font-cinzel text-base">Includes</p>
                 <motion.div
@@ -58,7 +58,7 @@ const AssessmentPackages = () => {
         {
             title: "Cognitive Assessment",
             description:
-                "A stand-alone assessment of your child's intellectual abilities providing insight into verbal reasoning, visual-spatial skills, working memory, and processing speed.",
+                "We use the Wechsler Intelligence Scale for Children - Fifth Edition (WISC-V) to assess a child's cognitive strengths and areas of difficulty across a range of thinking skills. This includes verbal reasoning, visual-spatial skills, working memory, processing speed, and fluid reasoning. At Novi Nest Psychology, we currently offer the WISC-V for children and adolescents aged 6 to 16 years, and all subtests are administered to provide a comprehensive profile reflecting each child's cognitive abilities.",
             includes: [
                 "Parent interview",
                 "1:1 child assessment session utilising the WISC-V",
@@ -71,7 +71,7 @@ const AssessmentPackages = () => {
         {
             title: "Academic Assessment",
             description:
-                "An assessment of core academic skills—such as reading, writing, and mathematics—to identify learning strengths, difficulties, and support needs.",
+                "We use the Wechsler Individual Achievement Test - Third Edition (WIAT-III) to explore how your child is performing in key areas of learning. Core subtests assess essential academic skills such as reading, writing, and mathematics. Additional subtests can be included based on the referral question or your concerns, allowing us to tailor the assessment to your child's unique needs and provide meaningful, targeted recommendations.",
             includes: [
                 "Parent interview",
                 "Interview with an educator",
