@@ -98,7 +98,7 @@ const BookSession = ({onClose}) => {
             <div className='flex flex-col gap-2'>
                 <div className="flex justify-between items-start">
                     <div>
-                        <h2 className="text-2xl font-cinzel">Book an Assessments</h2>
+                        <h2 className="text-2xl font-cinzel">Book an Assessment</h2>
                         <p className="text-sm">Schedule a free 15-minute chat</p>
                     </div>
                     <button
