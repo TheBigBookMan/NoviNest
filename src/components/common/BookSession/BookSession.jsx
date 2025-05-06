@@ -54,35 +54,38 @@ const BookSession = ({onClose}) => {
 
         setErrors({});
         setEmailStatus('sending');
-  
-        // fake timeout to simulate sending
-        setTimeout(() => {
-          console.log('Finished sending');
-          setEmailStatus('success');
-        }, 2000);
 
-        e.preventDefault();
-
-        // emailjs
-        //   .send(
-        //     "your_service_id",    // from EmailJS dashboard
-        //     "your_template_id",   // from EmailJS dashboard
-        //     {
-        //       from_email: formData.email,
-        //       message: formData.message,
-        //     },
-        //     "your_public_key"      // from EmailJS dashboard
-        //   )
-        //   .then(
-        //     (result) => {
-        //       console.log("Email sent successfully:", result.text);
-        //       alert("Message sent!");
-        //     },
-        //     (error) => {
-        //       console.log("Failed to send email:", error.text);
-        //       alert("Failed to send message.");
-        //     }
-        //   );
+        const emailData = {
+            parent_name: form.name,
+            email: form.email,
+            phone: form.phone,
+            child_name: form.childName,
+            child_age: form.childAge,
+            assessment_type: [
+                ...form.assessmentType,
+                form.otherAssessment && `Other: ${form.otherAssessment}`
+            ].filter(Boolean).join(', '),
+            message: form.message || 'N/A'
+        };
+    
+        emailjs
+            .send(
+                'service_krsa1c9',
+                'template_1wcp3fp',
+                emailData,
+                'BD0OaYo47XXjDhe9Z'
+            )
+            .then(
+                (result) => {
+                    console.log("Email sent successfully:", result.text);
+                    setEmailStatus('success');
+                },
+                (error) => {
+                    console.log("Failed to send email:", error.text);
+                    alert("Failed to send message.");
+                    setEmailStatus('idle');
+                }
+            );
     }
 
     return (
