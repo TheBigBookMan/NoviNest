@@ -12,12 +12,25 @@ const BookSession = ({onClose}) => {
         childAge: '',
         message: '',
         otherAssessment: '',
+        assessmentType: [],
     });
     const [emailStatus, setEmailStatus] = useState('idle');
     const [errors, setErrors] = useState({});
 
     const handleChange = (field) => (e) => {
         setForm({ ...form, [field]: e.target.value });
+    };
+
+    const handleCheckboxChange = (value) => {
+        setForm((prev) => {
+            const alreadySelected = prev.assessmentType.includes(value);
+            return {
+                ...prev,
+                assessmentType: alreadySelected
+                    ? prev.assessmentType.filter((v) => v !== value)
+                    : [...prev.assessmentType, value],
+            };
+        });
     };
     
     const sendForm  = (e) => {
@@ -29,6 +42,10 @@ const BookSession = ({onClose}) => {
         if (!form.phone) newErrors.phone = "Phone number is required.";
         if (!form.childName) newErrors.childName = "Child's name is required.";
         if (!form.childAge) newErrors.childAge = "Child's age is required.";
+
+        if (form.assessmentType.length === 0 && !form.otherAssessment.trim()) {
+            newErrors.assessmentType = "Please select or specify at least one assessment type.";
+        }
 
         if (Object.keys(newErrors).length > 0) {
             setErrors(newErrors);
@@ -149,12 +166,46 @@ const BookSession = ({onClose}) => {
                     </div>
 
                     <div>
-                        <label className="block mb-1 font-medium">Assessment Type <span className="text-red-500">*</span></label>
+                        <label className="block mb-1 font-medium">
+                            Assessment Type <span className="text-red-500">*</span>
+                        </label>
                         <div className="flex flex-col gap-2 pl-1">
-                            <label><input type="checkbox" className="mr-2" />Cognitive / IQ Assessment</label>
-                            <label><input type="checkbox" className="mr-2" />Educational / Learning Assessment</label>
-                            <label><input type="checkbox" className="mr-2" />Full Psychoeducational Assessment</label>
-                            <label><input type="checkbox" className="mr-2" />Not sure yet</label>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    className="mr-2"
+                                    onChange={() => handleCheckboxChange("Cognitive / IQ Assessment")}
+                                    checked={form.assessmentType.includes("Cognitive / IQ Assessment")}
+                                />
+                                Cognitive / IQ Assessment
+                            </label>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    className="mr-2"
+                                    onChange={() => handleCheckboxChange("Educational / Learning Assessment")}
+                                    checked={form.assessmentType.includes("Educational / Learning Assessment")}
+                                />
+                                Educational / Learning Assessment
+                            </label>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    className="mr-2"
+                                    onChange={() => handleCheckboxChange("Full Psychoeducational Assessment")}
+                                    checked={form.assessmentType.includes("Full Psychoeducational Assessment")}
+                                />
+                                Full Psychoeducational Assessment
+                            </label>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    className="mr-2"
+                                    onChange={() => handleCheckboxChange("Not sure yet")}
+                                    checked={form.assessmentType.includes("Not sure yet")}
+                                />
+                                Not sure yet
+                            </label>
                             <label className="flex flex-col mt-1">
                                 <span className="mb-1">Other (please specify):</span>
                                 <input
@@ -164,8 +215,10 @@ const BookSession = ({onClose}) => {
                                     className="rounded-lg border border-gray-300 bg-white p-3 w-full shadow-sm focus:border-[#858D7E] focus:ring-[#858D7E] focus:outline-none focus:ring-1 transition"
                                 />
                             </label>
+                            {errors.assessmentType && (
+                                <p className="text-red-500 text-xs mt-1">{errors.assessmentType}</p>
+                            )}
                         </div>
-                        {errors.otherAssessment && <p className="text-red-500 text-xs mt-1">{errors.otherAssessment}</p>}
                     </div>
 
                     <div>
