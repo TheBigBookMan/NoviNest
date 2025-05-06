@@ -64,7 +64,10 @@ const ContactSection = () => {
             message: form.message || 'N/A'
         };
 
-        emailjs.send('service_krsa1c9', 'template_1wcp3fp', emailData, 'BD0OaYo47XXjDhe9Z')
+        emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            emailData,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
             .then(() => setEmailStatus('success'))
             .catch(() => {
                 alert("Failed to send message.");

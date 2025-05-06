@@ -70,10 +70,10 @@ const BookSession = ({onClose}) => {
     
         emailjs
             .send(
-                'service_krsa1c9',
-                'template_1wcp3fp',
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
                 emailData,
-                'BD0OaYo47XXjDhe9Z'
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
             )
             .then(
                 (result) => {
@@ -98,7 +98,7 @@ const BookSession = ({onClose}) => {
             <div className='flex flex-col gap-2'>
                 <div className="flex justify-between items-start">
                     <div>
-                        <h2 className="text-2xl font-cinzel">Book an Assessment</h2>
+                        <h2 className="text-2xl font-cinzel">Book an Assessments</h2>
                         <p className="text-sm">Schedule a free 15-minute chat</p>
                     </div>
                     <button
