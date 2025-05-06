@@ -29,6 +29,8 @@ const Contact = () => {
                     <a href="mailto:hello@novinestpsychology.com.au" className='underline'>hello@novinestpsychology.com.au</a>
                 </div>
 
+                <p className='font-playfair'>Based in Sydney, NSW, Australia</p>
+
                 <div className='flex flex-col'>
                     <p className='font-cinzel text-lg'>About</p>
                     <Link to='/services'>
