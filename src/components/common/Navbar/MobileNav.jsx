@@ -80,7 +80,7 @@ const MobileNav = () => {
                                     <LinkedinLogo size={38} color='#00000' />
                                 </a>
                                 
-                                <a onClick={openInstagram} >
+                                <a onClick={openInstagram} target='_blank' rel="noopener noreferrer" aria-label="Instagram">
                                     <InstagramLogo size={38} color='#00000' />
                                 </a>
                             </div>
