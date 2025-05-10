@@ -26,10 +26,10 @@ const Packages = () => {
     const isInView = useInView(ref, { once: true, amount: 0.2 });
 
     return (
-        <div className="flex flex-col p-4 py-12 gap-2">
-            <p className="font-cinzel text-lg">Our Packages</p>
+        <article id="fees-packages-article" aria-labelledby="fees-packages-heading" className="flex flex-col p-4 py-12 gap-2">
+            <h3 id="fees-packages-heading" className="font-cinzel text-lg">Our Packages</h3>
 
-            <motion.div
+            <motion.ul
                 ref={ref}
                 variants={containerVariants}
                 initial="hidden"
@@ -54,7 +54,7 @@ const Packages = () => {
                         price: "$60 per 15 minutes",
                     },
                 ].map((pkg, idx) => (
-                    <motion.div
+                    <motion.li
                         key={idx}
                         variants={itemVariants}
                         className="leading-relaxed"
@@ -71,10 +71,10 @@ const Packages = () => {
                         >
                             <p><span  className='underline'>{pkg.label}</span> - <span className="text-[#B25D3E] font-semibold ">{pkg.price}</span></p>
                         </HashLink>
-                    </motion.div>
+                    </motion.li>
                 ))}
-            </motion.div>
-        </div>
+            </motion.ul>
+        </article>
     );
 };
 
