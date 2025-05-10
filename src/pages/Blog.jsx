@@ -3,9 +3,9 @@ import Footer from "../components/common/Footer/Footer";
 
 const Blog = () => {
     return (
-        <div className='flex flex-col'>
+        <section id="blog-section" aria-labelledby="blog-heading" className='flex flex-col'>
             <div className="flex flex-col items-center text-center px-6 py-16 max-w-2xl mx-auto  rounded-lg  text-[#333]">
-                <h1 className="text-3xl font-cinzel text-[#858D7E] mb-4">Blog - Coming Soon!</h1>
+                <h2 id="blog-heading" className="text-3xl font-cinzel text-[#858D7E] mb-4">Blog - Coming Soon!</h2>
 
                 <p className="text-lg font-playfair text-[#B25D3E] mb-6">We're working on something special!</p>
 
@@ -23,7 +23,7 @@ const Blog = () => {
             <Contact />
 
             <Footer />
-        </div>
+        </section>
     )
 }
 
