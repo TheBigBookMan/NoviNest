@@ -48,16 +48,15 @@ const Expect = () => {
     const isInView = useInView(ref, { once: true, amount: 0.2 });
 
     return (
-        <div className="flex flex-col px-4 py-10 gap-6 bg-[#858D7E] text-slate-100 text-sm">
-            <p className="font-cinzel text-xl">What to Expect</p>
-            <p>
-                At Novi Nest, we aim to make the assessment process clear from the
-                start. Here's what you can expect:
+        <article id="expect-article" aria-labelledby="expect-heading" className="flex flex-col px-4 py-10 gap-6 bg-[#858D7E] text-slate-100 text-sm">
+            <h2 id="expect-heading" className="font-cinzel text-xl">What to Expect</h2>
+            <p className="leading-relaxed">
+                At <strong>Novi Nest</strong>, we aim to make the assessment process clear from the start. Here's what you can expect:
             </p>
 
-            <div ref={ref} className="relative flex flex-col gap-8 mt-4 pl-6 border-l-2 border-[#F5F5F3]/50">
+            <ol ref={ref} className="relative flex flex-col gap-8 mt-4 pl-6 border-l-2 border-[#F5F5F3]/50">
                 {steps.map((step, i) => (
-                    <motion.div
+                    <motion.li
                         key={i}
                         initial={{ opacity: 0, y: 30 }}
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -74,19 +73,19 @@ const Expect = () => {
 
                             {/* Card content */}
                             <div className="bg-[#F5F5F3] text-[#333] rounded-lg shadow-md p-4 w-full">
-                            <p className="text-[#B25D3E] font-semibold mb-2">{step.title}</p>
-                            <div className="flex flex-col gap-2 leading-relaxed">
-                                {step.content.map((line, j) => (
-                                    <p key={j} className={line.startsWith("Note") ? "italic" : ""}>
-                                        {line}
-                                    </p>
-                                ))}
+                                <h3 className="text-[#B25D3E] font-semibold mb-2">{step.title}</h3>
+                                <div className="flex flex-col gap-2 leading-relaxed">
+                                    {step.content.map((line, j) => (
+                                        <p key={j} className={line.startsWith("Note") ? "italic" : ""}>
+                                            {line}
+                                        </p>
+                                    ))}
                             </div>
                         </div>
-                    </motion.div>
+                    </motion.li>
                 ))}
-            </div>
-        </div>
+            </ol>
+        </article>
     );
 };
 
