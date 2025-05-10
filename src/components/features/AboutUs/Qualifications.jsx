@@ -24,14 +24,16 @@ const Qualifications = () => {
     const isInView = useInView(qualificationsRef, { once: true, amount: 0.2 });
 
     return (
-        <motion.div
+        <motion.article
+            id="qualifications-article" 
+            aria-labelledby="qualifications-heading"
             ref={qualificationsRef}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={listVariants}
             className="flex flex-col gap-6  p-4"
         >
-            <p className="text-xl font-cinzel">QUALIFICATIONS AND TRAININGS</p>
+            <h3 id="qualifications-heading" className="text-xl font-cinzel">QUALIFICATIONS AND TRAININGS</h3>
 
             <motion.ul
             variants={listVariants}
@@ -43,12 +45,12 @@ const Qualifications = () => {
                     "Master of Psychology (Clinical), Flinders University",
                     "Bachelor of Psychology (Honours), Flinders University",
                 ].map((text, i) => (
-                    <motion.li key={i} variants={itemVariants} className="list-disc text-sm text-[#B25D3E]">
-                        {text}
+                    <motion.li key={i} variants={itemVariants} className="leading-relaxed list-disc text-sm text-[#B25D3E]">
+                        <span>{text}</span>
                     </motion.li>
                 ))}
             </motion.ul>
-        </motion.div>
+        </motion.article>
     )
 }
 
