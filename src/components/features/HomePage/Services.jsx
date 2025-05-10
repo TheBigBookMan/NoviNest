@@ -6,18 +6,18 @@ const ServiceItem = ({ title, description }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="flex flex-col pb-2 border-b">
+        <article className="flex flex-col pb-2 border-b" aria-labelledby={`service-${title.replace(/\s+/g, '-').toLowerCase()}`}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="flex justify-between items-center py-2 cursor-pointer"
             >
-                <p className="italic text-[#B25D3E] text-left">{title}</p>
+                <h3 id={`service-${title.replace(/\s+/g, '-').toLowerCase()}`} className="italic text-[#B25D3E] text-left">{title}</h3>
                 <motion.div
-                animate={{ rotate: isOpen ? 180 : 0 }}
-                transition={{ duration: 0.3 }}
-                className="h-5 w-5 text-[#858D7E]"
-                >
-                <ChevronDownIcon />
+                    animate={{ rotate: isOpen ? 180 : 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="h-5 w-5 text-[#858D7E]"
+                    >
+                    <ChevronDownIcon />
                 </motion.div>
             </button>
 
@@ -47,7 +47,7 @@ const ServiceItem = ({ title, description }) => {
                     </motion.div>
                 )}
             </AnimatePresence>
-        </div>
+        </article>
     );
 };
 
@@ -71,19 +71,21 @@ const Services = () => {
     ];
 
     return (
-        <div className="flex flex-col h-fit bg-[#F5F5F3] px-4 py-20 ">
-            <p className="text-3xl font-bold text-[#858D7E] font-cinzel">Our Services</p>
+        <section aria-labelledby="services-heading" className="flex flex-col h-fit bg-[#F5F5F3] px-4 py-20 ">
+            <h2 className="text-3xl font-bold text-[#858D7E] font-cinzel">Our Services</h2>
 
-            <div className="flex flex-col gap-4 mt-4 text-sm">
+            <ul className="flex flex-col gap-4 mt-4 text-sm">
                 {services.map((service, idx) => (
-                    <ServiceItem key={idx} title={service.title} description={service.description} />
+                    <li key={idx}>
+                        <ServiceItem key={idx} title={service.title} description={service.description} />
+                    </li>
                 ))}
-            </div>
+            </ul>
 
-            <p className="mt-6 italic text-sm text-[#4B5563]">
+            <aside className="mt-6 italic text-sm text-[#4B5563]">
                 *Coming Soon! Autism and ADHD diagnostic assessments*
-            </p>
-        </div>
+            </aside>
+        </section>
     );
 };
 
