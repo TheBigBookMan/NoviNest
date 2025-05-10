@@ -3,7 +3,7 @@ const Testimony = () => {
         <article 
             id="testimony-article" 
             aria-labelledby="testimony-heading" 
-            className='flex flex-col bg-[#F5F5F3] p-8 mx-4 text-[#333] gap-8 rounded-xl shadow-md border-l-4 border-[#B25D3E] max-w-3xl mx-auto'
+            className='flex flex-col bg-[#F5F5F3] p-8 mx-4 text-[#333] gap-8 rounded-xl shadow-md border-l-4 border-[#B25D3E] max-w-3xl '
         >
             <div className='flex flex-col items-center'>
                 <h3 id="testimony-heading" className='text-3xl font-cinzel text-[#858D7E] mb-4 text-center'>
