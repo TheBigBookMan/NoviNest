@@ -1,6 +1,6 @@
 const CognitiveAssessment = () => {
     return (
-        <article className='flex flex-col p-4 gap-6' aria-labelledby="cognitive-assessment-heading">
+        <section className='flex flex-col p-4 gap-6' aria-labelledby="cognitive-assessment-heading">
             <h3 className='font-cinzel text-xl'>Is a Cognitive or Academic Assessment Right for Your Child?</h3>
 
             <div className='flex flex-col text-sm gap-4'>
@@ -17,7 +17,7 @@ const CognitiveAssessment = () => {
 
                 <p>If you answered yes to any of the above, a cognitive and/or academic assessment may offer the clarity, insight, and direction you're seeking. These assessments explore your child's unique learning profile and provide practical, tailored recommendations to support their educational and emotional wellbeing—at school and at home.</p>
             </div>
-        </article>
+        </section>
     )
 }
 
