@@ -21,7 +21,8 @@ const Differences = () => {
     const isInView = useInView(ref, { once: true, amount: 0.2 }); 
 
     return (
-        <motion.section
+        <motion.article
+            id="differences-section"
             aria-labelledby="differences-heading"
             ref={ref}
             variants={containerVariants}
@@ -29,7 +30,7 @@ const Differences = () => {
             animate={isInView ? "visible" : "hidden"}
             className="flex flex-col h-fit p-4  pt-20 bg-[#F5F5F3] "
         >
-            <h2 className="text-3xl font-cinzel font-bold text-[#858D7E]">Our Differences</h2>
+            <h2 id="differences-heading" className="text-3xl font-cinzel font-bold text-[#858D7E]">Our Differences</h2>
 
             <ul className="flex flex-col gap-6 mt-4 text-sm">
                 {[
@@ -60,7 +61,7 @@ const Differences = () => {
                     </motion.li>
                 ))}
             </ul>
-        </motion.section>
+        </motion.article>
     );
 };
 

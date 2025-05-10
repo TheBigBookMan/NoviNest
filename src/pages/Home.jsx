@@ -37,7 +37,7 @@ const Home = () => {
     }, []);
 
     return (
-        <main className='flex flex-col w-full h-full relative'>
+        <section className='flex flex-col w-full h-full relative'>
             <AnimatePresence>
                 {openBooking && (
                     <BookSession onClose={() => setOpenBooking(false)} />
@@ -71,7 +71,7 @@ const Home = () => {
             <Contact />
 
             <Footer />
-        </main>
+        </section>
     )
 }
 
