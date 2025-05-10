@@ -8,7 +8,7 @@ const AboutUs = () => {
     
 
     return (
-        <div className='flex flex-col gap-8'>
+        <section id="about-us-section" className='flex flex-col gap-8'>
             <Bio />
 
             <Testimony />
@@ -18,7 +18,7 @@ const AboutUs = () => {
             <Contact />
 
             <Footer />
-        </div>
+        </section>
     )
 }
 
