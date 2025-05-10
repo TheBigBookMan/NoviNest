@@ -27,7 +27,7 @@ const Home = () => {
             const viewportHeight = window.innerHeight;
             const fullHeight = document.body.scrollHeight;
         
-            const distanceFromBottom = fullHeight - (scrollY + viewportHeight);
+            const distanceFromBottom = Math.max(0, fullHeight - (scrollY + viewportHeight));
         
             setAtBottom(distanceFromBottom < 150);
         };
@@ -37,7 +37,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className='flex flex-col w-full h-full relative'>
+        <main className='flex flex-col w-full h-full relative'>
             <AnimatePresence>
                 {openBooking && (
                     <BookSession onClose={() => setOpenBooking(false)} />
@@ -55,7 +55,7 @@ const Home = () => {
                         transition={{ duration: 0.4, ease: "easeOut" }}
                         className="fixed bottom-2 left-2 z-48 h-[60px] w-fit text-sm px-2 hover:cursor-pointer flex items-center justify-center rounded-xl bg-[#4B5563] hover:bg-[#3a4048]"
                     >
-                        <p className="text-white">Book an Assessment</p>
+                        <p className="text-white" aria-label="Book an assessment button">Book an Assessment</p>
                     </motion.div>
                 )}
             </AnimatePresence>
@@ -71,7 +71,7 @@ const Home = () => {
             <Contact />
 
             <Footer />
-        </div>
+        </main>
     )
 }
 
