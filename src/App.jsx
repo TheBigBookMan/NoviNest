@@ -21,18 +21,18 @@ const ScrollToTop = () => {
 
 function App() {
     return (
-        <div className='flex flex-col min-w-screen min-h-screen text-[#333333] font-poppins'>
+        <div className='flex flex-col min-w-screen min-h-screen text-[#333333] font-poppins bg-white'>
             <Navbar />
             <ScrollToTop />
             
             <Routes>
 
-                <Route path='/' index element={<Home />} />
-                <Route path='/services' element={<Services />} />
-                <Route path='/about-us' element={<AboutUs />} />
-                <Route path='/blog' element={<Blog />} />
-                <Route path='/contact' element={<Contact />} />
-                <Route path='/fees' element={<Fees />} />
+                <Route path='/' index element={<Home title="Home - Novi Nest" description="Welcome to Novi Nest" />} />
+                <Route path='/services' element={<Services title="Services - Novi Nest" description="Services Novi Nest offers" />} />
+                <Route path='/about-us' element={<AboutUs title="About Us - Novi Nest" description="Who Novi Nest is" />} />
+                <Route path='/blog' element={<Blog title="Blog - Novi Nest" description="Look at our blog posts" />} />
+                <Route path='/contact' element={<Contact title="Contact - Novi Nest" description="How to contact Novi Nest" />} />
+                <Route path='/fees' element={<Fees title="Fees - Novi Nest" description="Fees for Novi Nest services" />} />
 
             </Routes>
         </div>
