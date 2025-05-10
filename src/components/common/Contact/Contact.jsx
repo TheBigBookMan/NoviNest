@@ -18,21 +18,21 @@ const Contact = () => {
     };
 
     return (
-        <div className='flex flex-col h-fit w-full  p-4 py-12 text-sm gap-12'>
+        <section aria-labelledby="contact-heading" className='flex flex-col h-fit w-full  p-4 py-12 text-sm gap-12'>
             <div className='flex justify-center'>
-                <img src={logoSVG} className='w-32' />
+                <img src={logoSVG} alt="Novi Nest Psychology Logo" className='w-32' />
             </div>
 
             <div className='flex flex-col  gap-4'>
                 <div className='flex flex-col'>
-                    <p className='font-cinzel text-lg'>Contact Novi Nest</p>
-                    <a href="mailto:hello@novinestpsychology.com.au" className='underline'>hello@novinestpsychology.com.au</a>
+                    <h2 className='font-cinzel text-lg'>Contact Novi Nest</h2>
+                    <a href="mailto:hello@novinestpsychology.com.au" className='underline' aria-label="Email Novi Nest Psychology">hello@novinestpsychology.com.au</a>
                 </div>
 
-                <p className='font-playfair'>Based in Sydney, NSW, Australia</p>
+                <address className='font-playfair'>Based in Sydney, NSW, Australia</address>
 
                 <div className='flex flex-col'>
-                    <p className='font-cinzel text-lg'>About</p>
+                    <h3 className='font-cinzel text-lg'>About</h3>
                     <Link to='/services'>
                         <p className='underline'>Services</p>
                     </Link>
@@ -47,16 +47,16 @@ const Contact = () => {
                 </div>
 
                 <div className='flex flex-col'>
-                    <p className='font-cinzel text-lg'>Follow</p>
+                    <h3 className='font-cinzel text-lg'>Follow</h3>
 
-                    <a href='linkedin.com' target='_blank' className='underline' >Linkedin</a>
+                    <a href='https://linkedin.com' rel="noopener noreferrer" target='_blank' className='underline' aria-label="Follow us on LinkedIn" >Linkedin</a>
 
-                    <a onClick={openInstagram} className='underline' >Instagram</a>
+                    <a onClick={openInstagram} rel="noopener noreferrer" target='_blank' className='underline' aria-label="Follow us on Instagram">Instagram</a>
 
-                    <a href='facebook.com' target='_blank' className='underline' >Facebook</a>
+                    <a href='https://facebook.com' rel="noopener noreferrer" target='_blank' className='underline'aria-label="Follow us on Facebook">Facebook</a>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
