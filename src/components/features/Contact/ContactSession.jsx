@@ -76,40 +76,46 @@ const ContactSection = () => {
     };
 
     return (
-        <div className="p-6 pb-12 rounded-lg shadow-xl w-full max-w-3xl mx-auto">
-            <div className="flex flex-col gap-2 mb-4">
-                <h2 className="text-2xl font-cinzel">Book a Free Discovery Call</h2>
-                <p>Schedule a complimentary 15-minute phone consultation to explore how we can help.</p>
-            </div>
-
-            <form onSubmit={sendForm} className="flex flex-col gap-4 text-sm">
+        <article id="contact-session-article" aria-labelledby="contact-session-heading" className="px-6 pb-12 rounded-lg shadow-xl w-full max-w-3xl mx-auto">
+            <form id="contact-session-heading" onSubmit={sendForm} className="flex flex-col gap-4 text-sm">
                 <div>
-                    <label className="block mb-1 font-medium">Parent/Carer Full Name <span className="text-red-500">*</span></label>
-                    <input type="text" value={form.name} onChange={handleChange('name')} className="rounded-lg border border-gray-300 bg-white p-3 w-full shadow-sm focus:border-[#858D7E] focus:ring-[#858D7E] focus:outline-none focus:ring-1 transition" />
+                    <label htmlFor='parent-name' className="block mb-1 font-medium">Parent/Carer Full Name <span className="text-red-500">*</span></label>
+
+                    <input id='parent-name' type="text" value={form.name} onChange={handleChange('name')} className="rounded-lg border border-gray-300 bg-white p-3 w-full shadow-sm focus:border-[#858D7E] focus:ring-[#858D7E] focus:outline-none focus:ring-1 transition" aria-required="true" />
+
                     {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
                 </div>
 
                 <div>
-                    <label className="block mb-1 font-medium">Email Address <span className="text-red-500">*</span></label>
-                    <input type="email" value={form.email} onChange={handleChange('email')} className="rounded-lg border border-gray-300 bg-white p-3 w-full shadow-sm focus:border-[#858D7E] focus:ring-[#858D7E] focus:outline-none focus:ring-1 transition" />
+                    <label htmlFor='email' className="block mb-1 font-medium">Email Address <span className="text-red-500">*</span></label>
+
+                    <input id='email' type="email" value={form.email} onChange={handleChange('email')} className="rounded-lg border border-gray-300 bg-white p-3 w-full shadow-sm focus:border-[#858D7E] focus:ring-[#858D7E] focus:outline-none focus:ring-1 transition" aria-required="true" />
+
                     {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
                 </div>
 
                 <div>
-                    <label className="block mb-1 font-medium">Phone Number <span className="text-red-500">*</span></label>
-                    <input type="text" value={form.phone} onChange={handleChange('phone')} className="rounded-lg border border-gray-300 bg-white p-3 w-full shadow-sm focus:border-[#858D7E] focus:ring-[#858D7E] focus:outline-none focus:ring-1 transition" />
+                    <label htmlFor='phone' className="block mb-1 font-medium">Phone Number <span className="text-red-500">*</span></label>
+
+                    <input id='phone' type="number" value={form.phone} onChange={handleChange('phone')} className="rounded-lg border border-gray-300 bg-white p-3 w-full shadow-sm focus:border-[#858D7E] focus:ring-[#858D7E] focus:outline-none focus:ring-1 transition" aria-required="true" />
+
                     {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-4">
                     <div className="flex-1">
-                        <label className="block mb-1 font-medium">Your Child's First Name <span className="text-red-500">*</span></label>
-                        <input type="text" value={form.childName} onChange={handleChange('childName')} className="rounded-lg border border-gray-300 bg-white p-3 w-full shadow-sm focus:border-[#858D7E] focus:ring-[#858D7E] focus:outline-none focus:ring-1 transition" />
+                        <label id='child-name' className="block mb-1 font-medium">Your Child's First Name <span className="text-red-500">*</span></label>
+
+                        <input id='child-name' type="text" value={form.childName} onChange={handleChange('childName')} className="rounded-lg border border-gray-300 bg-white p-3 w-full shadow-sm focus:border-[#858D7E] focus:ring-[#858D7E] focus:outline-none focus:ring-1 transition" aria-required="true" />
+
                         {errors.childName && <p className="text-red-500 text-xs mt-1">{errors.childName}</p>}
                     </div>
+
                     <div className="flex-1">
-                        <label className="block mb-1 font-medium">Your Child's Age <span className="text-red-500">*</span></label>
-                        <input type="text" value={form.childAge} onChange={handleChange('childAge')} placeholder="e.g. 6 years old" className="rounded-lg border border-gray-300 bg-white p-3 w-full shadow-sm focus:border-[#858D7E] focus:ring-[#858D7E] focus:outline-none focus:ring-1 transition" />
+                        <label htmlFor='child-age' className="block mb-1 font-medium">Your Child's Age <span className="text-red-500">*</span></label>
+
+                        <input id='child-age' type="number" value={form.childAge} onChange={handleChange('childAge')} placeholder="e.g. 6 years old" className="rounded-lg border border-gray-300 bg-white p-3 w-full shadow-sm focus:border-[#858D7E] focus:ring-[#858D7E] focus:outline-none focus:ring-1 transition"  aria-required="true" />
+
                         {errors.childAge && <p className="text-red-500 text-xs mt-1">{errors.childAge}</p>}
                     </div>
                 </div>
@@ -131,8 +137,9 @@ const ContactSection = () => {
                 </div>
 
                 <div>
-                    <label className="block mb-1 font-medium">What would you like to ask or share?</label>
-                    <textarea rows={5} value={form.message} onChange={handleChange('message')} className="rounded-lg border border-gray-300 bg-white p-3 w-full shadow-sm focus:border-[#858D7E] focus:ring-[#858D7E] focus:outline-none focus:ring-1 transition resize-none" />
+                    <label htmlFor='ask' className="block mb-1 font-medium">What would you like to ask or share?</label>
+
+                    <textarea id='ask' rows={5} value={form.message} onChange={handleChange('message')} className="rounded-lg border border-gray-300 bg-white p-3 w-full shadow-sm focus:border-[#858D7E] focus:ring-[#858D7E] focus:outline-none focus:ring-1 transition resize-none" />
                 </div>
 
                 <div className="mt-2 text-sm text-gray-600">
@@ -154,16 +161,16 @@ const ContactSection = () => {
                 </div>
             </form>
 
-            <div className="mt-8 text-xs text-gray-500 border-t pt-4">
-                <p className="font-semibold mb-1">Please note:</p>
+            <aside id="emergency-contacts" aria-labelledby="emergency-contacts-heading" className="mt-8 text-xs text-gray-500 border-t pt-4">
+                <h6 id="emergency-contacts-heading" className="font-semibold mb-1">Please note:</h6>
                 <p className="mb-1">Novi Nest Psychology is not a crisis service and does not offer emergency support.</p>
                 <ul className="list-disc ml-5 space-y-1">
                     <li>Lifeline - 13 11 14</li>
                     <li>Kids Helpline - 1800 55 1800</li>
                     <li>Emergency Services - 000</li>
                 </ul>
-            </div>
-        </div>
+            </aside>
+        </article>
     );
 };
 
