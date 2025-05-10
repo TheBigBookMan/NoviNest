@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 import { HomeIcon, ListBulletIcon, UserIcon, BookOpenIcon, AtSymbolIcon } from '@heroicons/react/24/outline';
 import {FacebookLogo, InstagramLogo, LinkedinLogo, CurrencyDollarSimple} from "@phosphor-icons/react";
