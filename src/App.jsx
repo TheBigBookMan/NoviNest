@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import Navbar from './components/common/Navbar/Navbar';
-import Footer from './components/common/Footer/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import AboutUs from './pages/AboutUs';
