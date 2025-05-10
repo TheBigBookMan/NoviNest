@@ -6,15 +6,16 @@ const PackageItem = ({ title, description, includes }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div id={title.split(' ').join('-').toLowerCase()} className="flex flex-col gap-4 text-sm border-b pb-4 scroll-mt-24">
-            <p  className="font-playfair text-lg text-[#B25D3E]">{title}</p>
-            <p>{description}</p>
+        <article id={title.split(' ').join('-').toLowerCase()} aria-labelledby={`${title.split(' ').join('-').toLowerCase()}-heading`} className="flex flex-col gap-4 text-sm border-b pb-4 scroll-mt-24">
+            <h3 id={`${title.split(' ').join('-').toLowerCase()}-heading`} className="font-playfair text-lg text-[#B25D3E]">{title}</h3>
+            <p className="leading-relaxed">{description}</p>
 
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="flex items-center justify-between cursor-pointer mt-4"
             >
-                <p className="italic font-cinzel text-base">Includes</p>
+                <span aria-expanded={isOpen ? "true" : "false"} 
+                    aria-controls={`${title.split(' ').join('-').toLowerCase()}-includes`} className="italic font-cinzel text-base">Includes</span>
                 <motion.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.3 }}
@@ -27,12 +28,14 @@ const PackageItem = ({ title, description, includes }) => {
             <AnimatePresence initial={false}>
                 {isOpen && (
                     <motion.ul
+                        id={`${title.split(' ').join('-').toLowerCase()}-includes`}
                         key="includes"
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.4, ease: "easeOut" }}
                         className="flex flex-col pl-6 gap-3 overflow-hidden"
+                        aria-labelledby={`${title.split(' ').join('-').toLowerCase()}-heading`}
                     >
                         {includes.map((item, i) => (
                             <motion.li
@@ -43,13 +46,13 @@ const PackageItem = ({ title, description, includes }) => {
                                 transition={{ duration: 0.3, delay: i * 0.05 }}
                                 className="list-disc text-[#4B5563]"
                             >
-                                {item}
+                                <span>{item}</span>
                             </motion.li>
                         ))}
                     </motion.ul>
                 )}
             </AnimatePresence>
-        </div>
+        </article>
     );
 };
 
@@ -99,12 +102,13 @@ const AssessmentPackages = () => {
     ];
 
     return (
-        <div className="flex flex-col p-4 gap-6">
-            <p className='font-cinzel text-xl'>Assessment Packages</p>
+        <article id="assessment-packages-article" aria-labelledby="assessment-packages-heading" className="flex flex-col p-4 gap-6">
+            <h2 id="assessment-packages-heading" className='font-cinzel text-xl'>Assessment Packages</h2>
+
             {packages.map((pkg, idx) => (
                 <PackageItem  key={idx} {...pkg} />
             ))}
-        </div>
+        </article>
     );
 };
 
