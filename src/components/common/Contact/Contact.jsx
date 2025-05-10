@@ -49,7 +49,7 @@ const Contact = () => {
                 <div className='flex flex-col'>
                     <h3 className='font-cinzel text-lg'>Follow</h3>
 
-                    <a href='https://linkedin.com' rel="noopener noreferrer" target='_blank' className='underline' aria-label="Follow us on LinkedIn" >Linkedin</a>
+                    <a href='https://linkedin.com' rel="noopener noreferrer" target='_blank' className='underline' aria-label="Follow us on LinkedIn" >LinkedIn</a>
 
                     <a onClick={openInstagram} rel="noopener noreferrer" target='_blank' className='underline' aria-label="Follow us on Instagram">Instagram</a>
 

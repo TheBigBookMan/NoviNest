@@ -82,8 +82,20 @@ const Services = () => {
                 ))}
             </ul>
 
-            <aside className="mt-6 italic text-sm text-[#4B5563]">
-                *Coming Soon! Autism and ADHD diagnostic assessments*
+            <aside id="new-assessments-aside" aria-labelledby="new-assessments-heading" className="flex flex-col items-center text-center px-6 py-2 max-w-2xl mx-auto bg-white rounded-lg shadow-md text-[#333] mt-12">
+                <h3 id="new-assessments-heading" className="text-2xl font-cinzel text-[#858D7E] mb-4">New Assessments Coming Soon!</h3>
+
+                <p className="text-lg font-playfair text-[#B25D3E] mb-6">We're excited to expand our services!</p>
+
+                <p className="text-sm leading-relaxed mb-4">
+                    We're currently developing specialized assessments for Autism and ADHD to offer even more support for children and their families.
+                </p>
+
+                <p className="text-sm leading-relaxed mb-4">
+                    These new assessments will provide deeper insights into your child's unique strengths, challenges, and learning needs.
+                </p>
+
+                <p className="italic text-sm text-[#4B5563]">Stay tuned for updates. We can't wait to share this with you!</p>
             </aside>
         </article>
     );

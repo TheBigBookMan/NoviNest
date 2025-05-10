@@ -3,7 +3,7 @@ const CognitiveAssessment = () => {
         <article id="cognitive-assessment-article" className='flex flex-col p-4 gap-6' aria-labelledby="cognitive-assessment-heading">
             <h3 id="cognitive-assessment-heading" className='font-cinzel text-xl'>Is a Cognitive or Academic Assessment Right for Your Child?</h3>
 
-            <div className='flex flex-col text-sm gap-4'>
+            <div className='flex flex-col text-sm gap-4 leading-relaxed'>
                 <p>If you've been wondering whether a cognitive or academic assessment might support your child or adolescent, consider the questions below:</p>
 
                 <ul className='flex flex-col gap-4 pl-6'>

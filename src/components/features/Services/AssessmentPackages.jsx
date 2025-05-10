@@ -61,7 +61,7 @@ const AssessmentPackages = () => {
         {
             title: "Cognitive Assessment",
             description:
-                "We use the Wechsler Intelligence Scale for Children - Fifth Edition (WISC-V) to assess a child's cognitive strengths and areas of difficulty across a range of thinking skills. This includes verbal reasoning, visual-spatial skills, working memory, processing speed, and fluid reasoning. At Novi Nest Psychology, we currently offer the WISC-V for children and adolescents aged 6 to 16 years, and all subtests are administered to provide a comprehensive profile reflecting each child's cognitive abilities.",
+                "We use the Wechsler Intelligence Scale for Children - Fifth Edition (WISC-V) to assess a child's cognitive strengths and areas of difficulty across a range of thinking skills. This includes verbal reasoning, visual-spatial skills, working memory, processing speed, and fluid reasoning. At Novi Nest Psychology, we currently offer the WISC-V for children and adolescents aged 6 to 16 years, and all 10 subtests are administered to provide a comprehensive profile reflecting each child's cognitive abilities.",
             includes: [
                 "Parent interview",
                 "1:1 child assessment session utilising the WISC-V",

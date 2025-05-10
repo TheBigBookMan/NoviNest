@@ -19,7 +19,7 @@ const Services = () => {
 
             <article id="something-else-article" aria-labelledby="something-else-heading" className='flex flex-col p-4 py-8 gap-2 text-slate-100 bg-[#858D7E]'>
                 <h3 id="something-else-heading" className='text-xl font-playfair'>Looking for Something Else?</h3>
-                <p className='text-sm italic'>If you require a modified assessment package, or are seeking a different type of assessment not listed here, please don't hesitate to get in touch We're happy to discuss your needs and determine whether we can offer a tailored solution to support your goals.</p>
+                <p className='text-sm italic'>If you require a modified assessment package, or are seeking a different type of assessment not listed here, please don't hesitate to get in touch. We're happy to discuss your needs and determine whether we can offer a tailored solution to support your goals.</p>
             </article>
 
             <article id="consultation-with-schools-or-allied-health" aria-labelledby="schools-heading" className="flex flex-col p-4 gap-2 scroll-mt-20">
