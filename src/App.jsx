@@ -20,7 +20,7 @@ const ScrollToTop = () => {
 
 function App() {
     return (
-        <div className='flex flex-col min-w-screen min-h-screen text-[#333333] font-poppins bg-white'>
+        <main className='flex flex-col min-w-screen min-h-screen text-[#333333] font-poppins bg-white'>
             <Navbar />
             <ScrollToTop />
             
@@ -34,7 +34,7 @@ function App() {
                 <Route path='/fees' element={<Fees title="Fees - Novi Nest" description="Fees for Novi Nest services" />} />
 
             </Routes>
-        </div>
+        </main>
     )
 }
 
