@@ -71,7 +71,7 @@ const Services = () => {
     ];
 
     return (
-        <article id="services-section" aria-labelledby="services-heading" className="flex flex-col h-fit bg-[#F5F5F3] px-4 py-20 ">
+        <article id="services-article" aria-labelledby="services-heading" className="flex flex-col h-fit bg-[#F5F5F3] px-4 py-20 ">
             <h2 id="services-heading" className="text-3xl font-bold text-[#858D7E] font-cinzel">Our Services</h2>
 
             <ul className="flex flex-col gap-4 mt-4 text-sm">

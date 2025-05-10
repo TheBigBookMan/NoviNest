@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Landing = () => {
     return (
-        <article id="landing-section" className='flex flex-col h-screen justify-center items-center  p-4' aria-labelledby="landing-heading">
+        <article id="landing-article" className='flex flex-col h-screen justify-center items-center  p-4' aria-labelledby="landing-heading">
             <div className='flex flex-col gap-4 -mt-60 items-center'>
                 <img src={nestSVG} alt="Novi Nest Psychology logo" className='h-[220px] w-[280px]' />
 

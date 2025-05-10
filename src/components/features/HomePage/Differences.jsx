@@ -22,7 +22,7 @@ const Differences = () => {
 
     return (
         <motion.article
-            id="differences-section"
+            id="differences-article"
             aria-labelledby="differences-heading"
             ref={ref}
             variants={containerVariants}

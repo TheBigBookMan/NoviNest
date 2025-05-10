@@ -1,6 +1,6 @@
 const Info = () => {
     return (
-        <article id="info-section" aria-labelledby="info-heading" className='flex flex-col gap-8 h-fit -mt-12  p-4 bg-[#858D7E] text-slate-100'>
+        <article id="info-article" aria-labelledby="info-heading" className='flex flex-col gap-8 h-fit -mt-12  p-4 bg-[#858D7E] text-slate-100'>
             <h2 id="info-heading" className='text-3xl font-cinzel '>Welcome to Novi Nest - Where Understanding Nurtures Growth</h2>
 
             <div className='flex flex-col gap-4 text-sm leading-relaxed'>
