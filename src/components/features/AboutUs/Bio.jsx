@@ -9,7 +9,7 @@ const Bio = () => {
             <p>INSERT PICTURE HERE</p>
 
             <div className='flex flex-col gap-4 text-sm leading-relaxed'>
-                <p className='font-playfair text-base'>I started this practice because I'm passionate about helping families make sense of the unique minds of the children they love and care for, while empowering young people to embrace their strengths.</p>
+                <p className=' text-base'>I started this practice because I'm passionate about helping families make sense of the unique minds of the children they love and care for, while empowering young people to embrace their strengths.</p>
 
                 <p>I am a clinical psychologist with a background in both therapeutic and assessment-based roles across public and private sectors. My professional journey began as a youth worker, supporting children and adolescents living in residential care. As an early career psychologist, I worked with young people in the private practice space, before dedicating several years to the child protection system, both in a hospital-based role and working directly with families and children within the department. These experiences have shaped not only my clinical skills, but also my deep sense of empathy and commitment to supporting young people navigating complex systems.</p>
 
