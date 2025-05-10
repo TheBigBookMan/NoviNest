@@ -1,7 +1,7 @@
 const Outreach = () => {
     return (
-        <div className='flex flex-col p-4 text-slate-100 bg-[#858D7E] text-sm gap-4 py-12'>
-            <p className="font-cinzel text-lg">Outreach and Travel</p>
+        <article id="outreach-article" aria-labelledby="outreach-heading" className='flex flex-col p-4 text-slate-100 bg-[#858D7E] text-sm gap-4 py-12 leading-relaxed'>
+            <h3 id="outreach-heading" className="font-cinzel text-lg">Outreach and Travel</h3>
 
             <p>As a mobile assessment service, Novi Nest Psychology offers the convenience of seeing your child in their natural learning environment, typically at school or a learning centre.</p>
 
@@ -22,7 +22,7 @@ const Outreach = () => {
             </ul>
 
             <p className='mt-8'>All travel arrangements and associated fees are confirmed in advance for full transparency and peace of mind. If you're unsure whether your child's school falls within the local zone, feel free to reach out for a quick estimate.</p>
-        </div>
+        </article>
     )
 }
 
