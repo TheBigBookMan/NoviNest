@@ -1,12 +1,37 @@
+import portrait from '../../../assets/portrait.png';
+import { motion } from "framer-motion";
+
 const Bio = () => {
     return (
-        <article id="bio-article" aria-labelledby="bio-heading" className='flex flex-col gap-12 p-4'>
-            <div className="flex flex-col gap-4">
-                <h2 id="bio-heading" className='text-3xl font-cinzel'>Hi!<br/> I'm Ksenia,</h2>
-                <p className='text-xl font-playfair leading-relaxed'>a clinical psychologist and the founder of Novi Nest Psychology.</p>
-            </div>
+        <article id="bio-article" aria-labelledby="bio-heading" className='flex flex-col gap-8 p-4'>
+            <div className="flex flex-col items-center gap-8 mb-12">
+                <motion.div 
+                    initial={{ y: -20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="text-center"
+                >
+                    <h2 className="text-4xl font-cinzel text-[#B25D3E] leading-tight">
+                        Hi!<br/> I'm Ksenia,
+                    </h2>
+                    <p className="text-lg font-playfair text-[#4B5563] leading-relaxed mt-2">
+                        a clinical psychologist and the founder of Novi Nest Psychology.
+                    </p>
+                </motion.div>
 
-            <p>INSERT PICTURE HERE</p>
+                <motion.div 
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                    className="relative w-full max-w-xs md:max-w-md bg-[#C4D7B2] p-3 rounded-2xl shadow-lg"
+                >
+                    <img 
+                        src={portrait} 
+                        className="rounded-2xl shadow-lg border-4 border-[#F5F5F3] w-full"
+                        alt="Portrait of Ksenia - founder of Novi Nest Psychology"
+                    />
+                </motion.div>
+            </div>
 
             <div className='flex flex-col gap-12 text-sm'>
                 <div className='flex flex-col'>
