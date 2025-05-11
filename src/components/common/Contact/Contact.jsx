@@ -41,8 +41,8 @@ const Contact = () => {
                         <p className='underline'>About Us</p>
                     </Link>
 
-                    <Link to='/resources'>
-                        <p className='underline'>Resources</p>
+                    <Link to='/fees'>
+                        <p className='underline'>Fees</p>
                     </Link>
                 </div>
 
