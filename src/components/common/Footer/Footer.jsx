@@ -1,6 +1,6 @@
-import AboriginalFlag from '../../../assets/aboriginal-flag.png';
-import TorresFlag from '../../../assets/torres-strait-islands.png';
-import LgbtFlag from '../../../assets/lgbt-flag.png';
+import AboriginalFlag from '/public/aboriginal-flag.png';
+import TorresFlag from '/public/torres-strait-islands.png';
+import LgbtFlag from '/public/lgbt-flag.png';
 
 const Footer = () => {
     return (
