@@ -1,4 +1,4 @@
-import portrait from '../../../assets/portrait.jpg';
+import portrait from '/public/portrait.jpg';
 import { motion } from "framer-motion";
 
 const Bio = () => {
@@ -23,11 +23,11 @@ const Bio = () => {
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-                    className="relative w-full max-w-xs md:max-w-md bg-[#C4D7B2] p-3 rounded-2xl shadow-lg"
+                    className="relative w-full max-w-xs md:max-w-md rounded-2xl "
                 >
                     <img 
                         src={portrait} 
-                        className="rounded-2xl shadow-lg border-4 border-[#F5F5F3] w-full"
+                        className="rounded-2xl shadow-xl  w-full"
                         alt="Portrait of Ksenia - founder of Novi Nest Psychology"
                     />
                 </motion.div>
