@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logoSVG from '../../../assets/nest-svg.svg'; 
+import logoSVG from '/public/nest-svg.svg'; 
 
 const Contact = () => {
 
