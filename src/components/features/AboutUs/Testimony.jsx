@@ -1,25 +1,37 @@
+import kseniaApproach from '/public/ksenia-talking.mp4';
+
 const Testimony = () => {
     return (
-        <article 
-            id="testimony-article" 
-            aria-labelledby="testimony-heading" 
-            className='flex flex-col bg-[#F5F5F3] p-8 mx-4 text-[#333] gap-8 rounded-xl shadow-md border-l-4 border-[#B25D3E] max-w-3xl '
-        >
-            <div className='flex flex-col items-center'>
-                <h3 id="testimony-heading" className='text-3xl font-cinzel text-[#858D7E] mb-4 text-center'>
-                    Ksenia's Approach
-                </h3>
+        <section className="flex flex-col items-center p-6">
+            <h2 id="testimony-heading" className="text-4xl font-cinzel text-[#858D7E] mb-8 text-center">
+                Ksenia's Approach
+            </h2>
+
+            <div className="relative w-full mb-16 bg-[#858D7E] text-slate-100 shadow-xl overflow-hidden ">
+                <video
+                    controls
+                    preload="none"
+                    className="w-full h-auto"
+                >
+                    <source src={kseniaApproach} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
 
-            <blockquote className='font-playfair text-center text-xl text-[#B25D3E] leading-relaxed mb-4'>
-                “Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime impedit non provident perspiciatis facilis adipisci molestiae asperiores, nostrum id.”
-            </blockquote>
-                
-            <cite className="text-sm text-[#4B5563] italic text-center">
-                - Ksenia Zinoviev
-            </cite>
-        </article>
-    )
-}
+            <article 
+                aria-labelledby="testimony-heading" 
+                className="flex flex-col bg-[#F5F5F3] p-8 text-[#333] gap-8 shadow-md border-l-4 border-[#B25D3E] max-w-3xl w-full"
+            >
+                <blockquote className="font-playfair text-center text-xl text-[#B25D3E] leading-relaxed mb-4">
+                    “Ultimately, this work is about helping things make sense, so that moving forward feels a little less overwhelming, and a little more possible.”
+                </blockquote>
+                    
+                <cite className="text-sm text-[#4B5563] italic text-center">
+                    - Ksenia Zinoviev
+                </cite>
+            </article>
+        </section>
+    );
+};
 
 export default Testimony;
