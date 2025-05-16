@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import {FacebookLogo, InstagramLogo, LinkedinLogo} from "@phosphor-icons/react";
-import logoSVG from '../../../assets/logo-svg.svg';
+import logoSVG from '/public/logo-svg.svg';
 
 const DesktopNav = () => {
     const {pathname} = useLocation();
