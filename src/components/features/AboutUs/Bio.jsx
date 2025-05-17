@@ -36,7 +36,7 @@ const Bio = () => {
             <div className='flex flex-col gap-12 text-sm'>
                 <div className='flex flex-col'>
                     <p className="text-base italic leading-relaxed">
-                        I started this practice because I am deeply committed to helping families make sense of the unique minds of the children they care for. My goal is to empower young people to recognize and embrace their strengths, building the confidence and understanding they need to thrive.
+                        I started this practice because I am deeply committed to helping families make sense of the unique minds of the children they care for. My goal is to empower young people to recognise and embrace their strengths, building the confidence and understanding they need to thrive.
                     </p>
 
                     <div className="flex justify-center items-end w-full gap-12 h-[40px]">
