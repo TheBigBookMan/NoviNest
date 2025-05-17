@@ -64,11 +64,11 @@ const Home = () => {
 
             <Landing />
 
-            <div className="relative w-full py-16 bg-[#F5F5F3]  overflow-hidden ">
+            <div className="relative w-full py-16 bg-[#F5F5F3]  overflow-hidden p-6 ">
                 <video
                     controls
                     preload="none"
-                    className="w-full h-auto"
+                    className="w-full h-auto rounded-2xl shadow-xl"
                 >
                     <source src={noviIntro} type="video/mp4" />
                     Your browser does not support the video tag.
@@ -80,7 +80,7 @@ const Home = () => {
             <Differences />
                 
             <div className="px-6 py-12 flex justify-center">
-                <div className="relative w-full max-w-xs md:max-w-md bg-[#C4D7B2] rounded-t-[160px]  overflow-hidden aspect-w-4 aspect-h-3">
+                <div className="relative w-full max-w-xs md:max-w-md bg-[#C4D7B2] rounded-t-[160px] rounded-b-2xl shadow-xl overflow-hidden aspect-w-4 aspect-h-3">
                     <img 
                         src={kseniaDrawing} 
                         alt="Portrait of Ksenia writing - founder of Novi Nest Psychology"
