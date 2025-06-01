@@ -1,5 +1,3 @@
-import kseniaApproach from '/public/ksenia-talking.mp4';
-
 const Testimony = () => {
     return (
         <section className="flex flex-col items-center p-6">
@@ -13,7 +11,7 @@ const Testimony = () => {
                     preload="none"
                     className="w-full h-auto rounded-2xl shadow-xl"
                 >
-                    <source src={kseniaApproach} type="video/mp4" />
+                    <source src="ksenia-talking.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>

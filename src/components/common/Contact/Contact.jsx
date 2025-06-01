@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import logoSVG from '/public/nest-svg.svg'; 
 
 const Contact = () => {
 
@@ -20,7 +19,7 @@ const Contact = () => {
     return (
         <section id="contact-section" aria-labelledby="contact-heading" className='flex flex-col h-fit w-full  p-4 py-12 text-sm gap-12'>
             <div className='flex justify-center'>
-                <img src={logoSVG} alt="Novi Nest Psychology Logo" className='w-32' />
+                <img src="nest-svg.svg" alt="Novi Nest Psychology Logo" className='w-32' />
             </div>
 
             <div className='flex flex-col  gap-4'>

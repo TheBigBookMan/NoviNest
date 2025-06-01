@@ -1,6 +1,4 @@
-import nestSVG from '/public/nest-svg.svg';
 import { motion } from 'framer-motion';
-import kseniaSitting from '/public/ksenia-sitting.jpg';
 
 const Landing = () => {
     return (
@@ -10,7 +8,7 @@ const Landing = () => {
             aria-labelledby="landing-heading"
         >
             <img 
-                src={kseniaSitting} 
+                src="ksenia-sitting.jpg"
                 alt="Novi Nest founder Ksenia sitting on a backdrop" 
                 className="absolute inset-0 w-full h-full object-cover z-0"
             />

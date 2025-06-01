@@ -1,7 +1,3 @@
-import AboriginalFlag from '/public/aboriginal-flag.png';
-import TorresFlag from '/public/torres-strait-islands.png';
-import LgbtFlag from '/public/lgbt-flag.png';
-
 const Footer = () => {
     return (
         <footer className='flex flex-col md:flex-row h-fit gap-4 text-sm p-4 bg-[#858D7E] text-slate-100'>
@@ -9,9 +5,9 @@ const Footer = () => {
             We are a proudly inclusive organisation and an ally of the LGBTIQ+ community and the movement toward equality.</p>
 
             <div className='flex justify-center gap-1'>
-                <img src={AboriginalFlag} alt='Aboriginal flag of Australia' className='w-12 md:w-40' />
-                <img src={TorresFlag} alt='Torres Strait Islander flag of Australia' className='w-12 md:w-40' />
-                <img src={LgbtFlag} alt='LGBTQ+ Progress Pride flag' className='w-12 md:w-40' />
+                <img src="aboriginal-flag.png" alt='Aboriginal flag of Australia' className='w-12 md:w-40' />
+                <img src="torres-strait-islands.png" alt='Torres Strait Islander flag of Australia' className='w-12 md:w-40' />
+                <img src="lgbt-flag.png" alt='LGBTQ+ Progress Pride flag' className='w-12 md:w-40' />
             </div>
 
             <p>&copy; 2025 <strong>Novi Nest</strong>. All rights reserved.</p>

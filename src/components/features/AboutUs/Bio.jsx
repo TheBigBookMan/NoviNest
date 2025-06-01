@@ -1,4 +1,3 @@
-import portrait from '/public/portrait.jpg';
 import { motion } from "framer-motion";
 
 const Bio = () => {
@@ -26,7 +25,7 @@ const Bio = () => {
                     className="relative w-full max-w-xs md:max-w-md rounded-2xl "
                 >
                     <img 
-                        src={portrait} 
+                        src="portrait.jpg" 
                         className="rounded-2xl shadow-xl  w-full"
                         alt="Portrait of Ksenia - founder of Novi Nest Psychology"
                     />

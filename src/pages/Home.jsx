@@ -7,8 +7,6 @@ import BookSession from "../components/common/BookSession/BookSession";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
 import Contact from "../components/common/Contact/Contact";
-import noviIntro from '/public/novi-intro.mp4';
-import kseniaDrawing from '/public/ksenia-drawing.jpg';
 
 const Home = () => {
     const [openBooking, setOpenBooking] = useState(false);
@@ -70,7 +68,7 @@ const Home = () => {
                     preload="none"
                     className="w-full h-auto rounded-2xl shadow-xl"
                 >
-                    <source src={noviIntro} type="video/mp4" />
+                    <source src="novi-intro.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -82,7 +80,7 @@ const Home = () => {
             <div className="px-6 py-12 flex justify-center">
                 <div className="relative w-full max-w-xs md:max-w-md bg-[#C4D7B2] rounded-t-[160px] rounded-b-2xl shadow-xl overflow-hidden aspect-w-4 aspect-h-3">
                     <img 
-                        src={kseniaDrawing} 
+                        src="ksenia-drawing.jpg" 
                         alt="Portrait of Ksenia writing - founder of Novi Nest Psychology"
                         className="w-full h-full object-cover rounded-t-[160px]  shadow-lg"
                     />
