@@ -13,23 +13,52 @@ const DesktopNav = () => {
             <div className="flex gap-4 w-full">
                 <div className='flex justify-around items-center gap-4 w-full'>
                     <Link to='/'>
-                        <p className={`${pathname === '/' ? 'font-bold' : 'text-black'}`}>Home</p>
+                        <p className={`${pathname === '/' 
+                            ? 'underline underline-offset-2 decoration-slate-300 text-slate-300 font-bold' 
+                            : 'text-white hover:text-slate-300'}`}>
+                            Home
+                        </p>
                     </Link>
 
                     <Link to='/services'>
-                        <p className={`${pathname === '/services' ? 'font-bold' : 'text-black'}`}>Services</p>
+                        <p className={`${pathname === '/services' 
+                            ? 'underline underline-offset-2 decoration-slate-300 text-slate-300 font-bold' 
+                            : 'text-white hover:text-slate-300'}`}>
+                            Services
+                        </p>
                     </Link>
 
                     <Link to='/about-us'>
-                        <p className={`${pathname === '/about-us' ? 'font-bold' : 'text-black'}`}>About Us</p>
+                        <p className={`${pathname === '/about-us' 
+                            ? 'underline underline-offset-2 decoration-slate-300 text-slate-300 font-bold' 
+                            : 'text-white hover:text-slate-300'}`}>
+                            About Us
+                        </p>
                     </Link>
 
-                    <Link to='/resources'>
-                        <p className={`${pathname === '/resources' ? 'font-bold' : 'text-black'}`}>Resources</p>
+                    <Link to='/fees'>
+                        <p className={`${pathname === '/fees' 
+                            ? 'underline underline-offset-2 decoration-slate-300 text-slate-300 font-bold' 
+                            : 'text-white hover:text-slate-300'}`}>
+                            Fees
+                        </p>
+                    
+                    </Link>
+
+                    <Link to='/blog'>
+                        <p className={`${pathname === '/blog' 
+                            ? 'underline underline-offset-2 decoration-slate-300 text-slate-300 font-bold' 
+                            : 'text-white hover:text-slate-300'}`}>
+                            Blog
+                        </p>
                     </Link>
 
                     <Link to='/contact'>
-                        <p className={`${pathname === '/contact' ? 'font-bold' : 'text-black'}`}>Contact</p>
+                        <p className={`${pathname === '/contact' 
+                            ? 'underline underline-offset-2 decoration-slate-300 text-slate-300 font-bold' 
+                            : 'text-white hover:text-slate-300'}`}>
+                            Contact
+                        </p>
                     </Link>
                 </div>
 
