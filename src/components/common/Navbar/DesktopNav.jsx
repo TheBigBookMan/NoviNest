@@ -13,7 +13,7 @@ const DesktopNav = () => {
             <div className="flex gap-4 w-full">
                 <div className='flex justify-around items-center gap-4 w-full'>
                     <Link to='/'>
-                        <p className={`${pathname === '/' 
+                        <p className={`transition ${pathname === '/' 
                             ? 'underline underline-offset-2 decoration-slate-300 text-slate-300 font-bold' 
                             : 'text-white hover:text-slate-300'}`}>
                             Home
@@ -21,7 +21,7 @@ const DesktopNav = () => {
                     </Link>
 
                     <Link to='/services'>
-                        <p className={`${pathname === '/services' 
+                        <p className={`transition ${pathname === '/services' 
                             ? 'underline underline-offset-2 decoration-slate-300 text-slate-300 font-bold' 
                             : 'text-white hover:text-slate-300'}`}>
                             Services
@@ -29,7 +29,7 @@ const DesktopNav = () => {
                     </Link>
 
                     <Link to='/about-us'>
-                        <p className={`${pathname === '/about-us' 
+                        <p className={`transition ${pathname === '/about-us' 
                             ? 'underline underline-offset-2 decoration-slate-300 text-slate-300 font-bold' 
                             : 'text-white hover:text-slate-300'}`}>
                             About Us
@@ -37,7 +37,7 @@ const DesktopNav = () => {
                     </Link>
 
                     <Link to='/fees'>
-                        <p className={`${pathname === '/fees' 
+                        <p className={`transition ${pathname === '/fees' 
                             ? 'underline underline-offset-2 decoration-slate-300 text-slate-300 font-bold' 
                             : 'text-white hover:text-slate-300'}`}>
                             Fees
@@ -46,7 +46,7 @@ const DesktopNav = () => {
                     </Link>
 
                     <Link to='/blog'>
-                        <p className={`${pathname === '/blog' 
+                        <p className={`transition ${pathname === '/blog' 
                             ? 'underline underline-offset-2 decoration-slate-300 text-slate-300 font-bold' 
                             : 'text-white hover:text-slate-300'}`}>
                             Blog
@@ -54,7 +54,7 @@ const DesktopNav = () => {
                     </Link>
 
                     <Link to='/contact'>
-                        <p className={`${pathname === '/contact' 
+                        <p className={`transition ${pathname === '/contact' 
                             ? 'underline underline-offset-2 decoration-slate-300 text-slate-300 font-bold' 
                             : 'text-white hover:text-slate-300'}`}>
                             Contact
@@ -64,15 +64,15 @@ const DesktopNav = () => {
 
                 <div className='flex gap-1  items-center justify-center '>
                     <a href='facebook.com' target='_blank' >
-                        <FacebookLogo size={38} color='#00000' />
+                        <FacebookLogo size={38} color='#ffffff'  />
                     </a>
 
                     <a href='linkedin.com' target='_blank' >
-                        <LinkedinLogo size={38} color='#00000' />
+                        <LinkedinLogo size={38} color='#ffffff' />
                     </a>
                     
                     <a href='https://www.instagram.com/novinestpsychology/' target='_blank' >
-                        <InstagramLogo size={38} color='#00000' />
+                        <InstagramLogo size={38} color='#ffffff' />
                     </a>
                 </div>
             </div>
