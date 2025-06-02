@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Bio = () => {
     return (
-        <article id="bio-article" aria-labelledby="bio-heading" className='flex flex-col gap-8 p-4'>
+        <article id="bio-article" aria-labelledby="bio-heading" className='flex md:hidden flex-col gap-8 p-4 '>
             <div className="flex flex-col items-center gap-8 mb-12">
                 <motion.div 
                     initial={{ y: -20, opacity: 0 }}
