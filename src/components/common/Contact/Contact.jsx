@@ -41,9 +41,9 @@ const Contact = () => {
 
                 <div className="flex flex-col gap-2">
                     <h3 className="font-cinzel text-lg">Follow</h3>
-                    <a href="https://linkedin.com" rel="noopener noreferrer" target="_blank" className="underline" aria-label="Follow us on LinkedIn">LinkedIn</a>
+                    <a href="https://www.linkedin.com/company/novi-nest-psychology/" rel="noopener noreferrer" target="_blank" className="underline" aria-label="Follow us on LinkedIn">LinkedIn</a>
                     <a onClick={openInstagram} rel="noopener noreferrer" target="_blank" className="underline cursor-pointer" aria-label="Follow us on Instagram">Instagram</a>
-                    <a href="https://facebook.com" rel="noopener noreferrer" target="_blank" className="underline" aria-label="Follow us on Facebook">Facebook</a>
+                    <a href="https://www.facebook.com/share/192fXWnwC3/?mibextid=wwXIfr" rel="noopener noreferrer" target="_blank" className="underline" aria-label="Follow us on Facebook">Facebook</a>
                 </div>
             </div>
         </section>

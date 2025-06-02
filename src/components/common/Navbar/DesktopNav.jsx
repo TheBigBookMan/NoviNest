@@ -63,11 +63,11 @@ const DesktopNav = () => {
                 </div>
 
                 <div className='flex gap-1  items-center justify-center '>
-                    <a href='facebook.com' target='_blank' >
+                    <a href='https://www.facebook.com/share/192fXWnwC3/?mibextid=wwXIfr' target='_blank' >
                         <FacebookLogo size={38} color='#ffffff'  />
                     </a>
 
-                    <a href='linkedin.com' target='_blank' >
+                    <a href='https://www.linkedin.com/company/novi-nest-psychology/' target='_blank' >
                         <LinkedinLogo size={38} color='#ffffff' />
                     </a>
                     

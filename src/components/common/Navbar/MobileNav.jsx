@@ -72,11 +72,11 @@ const MobileNav = () => {
                             </Link>
 
                             <div className='flex gap-4 py-4 items-center justify-center w-full'>
-                                <a href='https://facebook.com' target='_blank' rel="noopener noreferrer" aria-label="Facebook">
+                                <a href='https://www.facebook.com/share/192fXWnwC3/?mibextid=wwXIfr' target='_blank' rel="noopener noreferrer" aria-label="Facebook">
                                     <FacebookLogo size={38} color='#00000' />
                                 </a>
 
-                                <a href='https://linkedin.com' target='_blank' rel="noopener noreferrer" aria-label="Linkedin">
+                                <a href='https://www.linkedin.com/company/novi-nest-psychology/' target='_blank' rel="noopener noreferrer" aria-label="Linkedin">
                                     <LinkedinLogo size={38} color='#00000' />
                                 </a>
                                 
