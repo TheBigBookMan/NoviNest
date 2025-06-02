@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const BioDesktop = () => {
     return (
-        <article id="bio-article" aria-labelledby="bio-heading" className='flex flex-col gap-20 px-6 py-24 max-w-6xl mx-auto text-slate-800'>
+        <article id="bio-article" aria-labelledby="bio-heading" className='hidden md:flex flex-col gap-20 px-6 py-24 max-w-6xl mx-auto text-slate-800'>
             {/* Intro Section */}
             <div className="flex flex-col md:flex-row items-start gap-16">
                 <div className="flex flex-col justify-center gap-4 max-w-md">

@@ -6,8 +6,10 @@ const DesktopNav = () => {
 
     return (
         <div className='hidden md:flex justify-between w-full'>
-            <Link to='/'>
-                <img src="logo-svg.svg" className='w-20' />
+            <Link to='/' className='flex flex-col items-center justify-center min-w-[120px]'>
+                {/* <img src="nest-svg.svg" className='w-16' /> */}
+                <p className='text-lg font-cinzel tracking-widest text-slate-100 '>Novi Nest</p>
+                <p className='text-xs font-cinzel tracking-widest text-slate-100 '>Psychology</p>
             </Link>
 
             <div className="flex gap-4 w-full">
