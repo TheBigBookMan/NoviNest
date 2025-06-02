@@ -76,7 +76,7 @@ const ContactSection = () => {
     };
 
     return (
-        <article id="contact-session-article" aria-labelledby="contact-session-heading" className="px-6 pb-12 rounded-lg shadow-xl w-full max-w-3xl mx-auto">
+        <article id="contact-session-article" aria-labelledby="contact-session-heading" className="px-6 pb-12 rounded-lg shadow-xl w-full max-w-3xl mx-auto mb-12">
             <form id="contact-session-heading" onSubmit={sendForm} className="flex flex-col gap-4 text-sm">
                 <div>
                     <label htmlFor='parent-name' className="block mb-1 font-medium">Parent/Carer Full Name <span className="text-red-500">*</span></label>
