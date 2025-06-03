@@ -94,7 +94,7 @@ const BookSession = ({onClose}) => {
             animate={{opacity: 1, y: 0}}
             exit={{ opacity: 0, y: 40 }}
             transition={{duration: 0.25, ease: 'easeOut'}}
-            className="fixed flex flex-col bottom-[90px] p-4 bg-slate-200 rounded-lg shadow-xl w-[95%] ml-2 max-h-[72vh] overflow-y-auto z-50">
+            className="fixed flex flex-col bottom-[90px] md:bottom-[120px] md:left-[40px] p-4 bg-slate-200 rounded-lg shadow-xl w-[95%] md:w-2/6 ml-2 max-h-[72vh] overflow-y-auto z-50">
             <div className='flex flex-col gap-2'>
                 <div className="flex justify-between items-start">
                     <div>
