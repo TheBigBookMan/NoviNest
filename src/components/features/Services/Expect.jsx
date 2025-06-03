@@ -48,7 +48,7 @@ const Expect = () => {
     const isInView = useInView(ref, { once: true, amount: 0.2 });
 
     return (
-        <article id="expect-article" aria-labelledby="expect-heading" className="flex flex-col px-4 py-10 gap-6 bg-[#858D7E] text-slate-100 text-sm">
+        <article id="expect-article" aria-labelledby="expect-heading" className="md:hidden flex flex-col px-4 py-10 gap-6 bg-[#858D7E] text-slate-100 text-base">
             <h2 id="expect-heading" className="font-cinzel text-xl">What to Expect</h2>
             <p className="leading-relaxed">
                 At <strong>Novi Nest</strong>, we aim to make the assessment process clear from the start. Here's what you can expect:
@@ -64,7 +64,7 @@ const Expect = () => {
                         className="relative flex gap-4"
                     >
                         {/* Numbered circle */}
-                        <div className="absolute -left-[33px] top-1 w-7 h-7 flex items-center justify-center rounded-full bg-[#B25D3E] text-white text-sm font-bold shadow-md">
+                        <div className="absolute -left-[33px] top-1 w-7 h-7 flex items-center justify-center rounded-full bg-[#B25D3E] text-white text-base font-bold shadow-md">
                             {i + 1}
                         </div>
 
