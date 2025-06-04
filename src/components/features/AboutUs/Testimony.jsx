@@ -11,7 +11,9 @@ const Testimony = () => {
             <div className="relative w-full max-w-5xl mb-16 bg-[#858D7E] text-slate-100 rounded-2xl shadow-xl overflow-hidden">
                 <video
                     controls
-                    preload="none"
+                    playsInline
+                    muted
+                    preload="auto"
                     className="w-full h-auto rounded-2xl shadow-xl"
                 >
                     <source src="ksenia-talking.mp4" type="video/mp4" />

@@ -65,9 +65,11 @@ const Home = () => {
             <div className="relative w-full py-16 bg-[#F5F5F3]  overflow-hidden p-6 lg:px-40 ">
                 <video
                     controls
-                    preload="none"
+                    playsInline
+                    muted
+                    preload="auto"
                     className="w-full h-auto rounded-2xl shadow-xl"
-                >
+                    >
                     <source src="novi-intro.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
