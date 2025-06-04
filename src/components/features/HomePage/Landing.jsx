@@ -20,7 +20,7 @@ const Landing = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: 'easeOut' }}
-                className="relative z-20 font-playfair text-3xl md:text-5xl text-left -mt-40 text-slate-100 px-4"
+                className="relative z-20 font-playfair text-3xl md:text-5xl text-left -mt-40 text-slate-100 px-4 md:px-40"
             >
                 Helping young minds flourish, grow with confidence and step into <i>brighter futures</i>
             </motion.h1>
