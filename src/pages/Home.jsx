@@ -37,7 +37,7 @@ const Home = () => {
     }, []);
 
     return (
-        <section className='flex flex-col w-full h-full relative'>
+        <section className='flex flex-col w-full h-full relative bg-[#F5F5F3]'>
             <AnimatePresence>
                 {openBooking && (
                     <BookSession onClose={() => setOpenBooking(false)} />
@@ -53,7 +53,7 @@ const Home = () => {
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: -100 }}
                         transition={{ duration: 0.4, ease: "easeOut" }}
-                        className="fixed bottom-6 left-2 z-50 h-[60px] w-fit text-sm px-2 hover:cursor-pointer flex items-center justify-center rounded-xl bg-[#404f3f] hover:bg-[#3a4048]"
+                        className="fixed bottom-6 md:bottom-12 left-2 md:left-12 z-50 h-[60px] w-fit text-sm md:text-base px-2 hover:cursor-pointer flex items-center justify-center rounded-xl bg-[#404f3f] hover:bg-[#3a4048]"
                     >
                         <p className="text-white" aria-label="Book an assessment button">Book an Assessment</p>
                     </motion.div>
@@ -62,7 +62,7 @@ const Home = () => {
 
             <Landing />
 
-            <div className="relative w-full py-16 bg-[#F5F5F3]  overflow-hidden p-6 ">
+            <div className="relative w-full py-16 bg-[#F5F5F3]  overflow-hidden p-6 lg:px-40 ">
                 <video
                     controls
                     preload="none"
@@ -77,8 +77,8 @@ const Home = () => {
 
             <Differences />
                 
-            <div className="px-6 py-12 flex justify-center">
-                <div className="relative w-full max-w-xs md:max-w-md bg-[#C4D7B2] rounded-t-[160px] rounded-b-2xl shadow-xl overflow-hidden aspect-w-4 aspect-h-3">
+            <div className="px-6 py-12 flex justify-center md:hidden">
+                <div className="relative w-full max-w-xs  bg-[#C4D7B2] rounded-t-[160px] rounded-b-2xl shadow-xl overflow-hidden aspect-w-4 aspect-h-3">
                     <img 
                         src="ksenia-drawing.jpg" 
                         alt="Portrait of Ksenia writing - founder of Novi Nest Psychology"
