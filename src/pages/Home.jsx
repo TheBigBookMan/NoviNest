@@ -66,7 +66,6 @@ const Home = () => {
                 <video
                     controls
                     playsInline
-                    muted
                     preload="auto"
                     className="w-full h-auto rounded-2xl shadow-xl"
                     >
