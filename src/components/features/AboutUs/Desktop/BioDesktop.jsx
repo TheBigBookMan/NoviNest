@@ -22,13 +22,13 @@ const BioDesktop = () => {
                         transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                         className="text-lg flex flex-col gap-12 font-playfair text-[#4B5563] leading-relaxed"
                     >
-                        <p>
+                        <span>
                             a clinical psychologist and the founder of Novi Nest Psychology.
-                        </p>
+                        </span>
 
-                        <p className="italic">
+                        <span className="italic">
                             I started this practice because I am deeply committed to helping families make sense of the unique minds of the children they care for. My goal is to empower young people to recognise and embrace their strengths, building the confidence and understanding they need to thrive.
-                        </p>
+                        </span>
                     </motion.p>
                 </div>
 
