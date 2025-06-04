@@ -9,7 +9,7 @@ const AboutUs = () => {
     
 
     return (
-        <section id="about-us-section" className='flex flex-col gap-8'>
+        <section id="about-us-section" className='flex flex-col gap-8 bg-[#F5F5F3]'>
             <Bio />
             <BioDesktop />
 

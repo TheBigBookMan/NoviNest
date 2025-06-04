@@ -21,7 +21,7 @@ const Testimony = () => {
 
             <article
                 aria-labelledby="testimony-heading"
-                className="flex flex-col bg-[#F5F5F3] p-6 md:p-10 text-[#333] gap-8 rounded-2xl shadow-xl border-l-4 border-[#B25D3E] w-full max-w-3xl"
+                className="flex flex-col bg-[#ffffff] p-6 md:p-10 text-[#333] gap-8 rounded-2xl shadow-xl border-l-4 border-[#B25D3E] w-full max-w-3xl"
             >
                 <blockquote className="font-playfair text-center text-xl md:text-2xl text-[#B25D3E] leading-relaxed mb-2">
                     “Ultimately, this work is about helping things make sense, so that moving forward feels a little less overwhelming, and a little more possible.”
