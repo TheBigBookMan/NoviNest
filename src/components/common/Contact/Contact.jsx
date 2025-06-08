@@ -20,7 +20,7 @@ const Contact = () => {
         className="flex flex-col items-center w-full p-6 py-12 text-sm gap-12"
         >
             <div className="flex justify-center">
-                <img src="/nest-svg.svg" alt="Novi Nest Psychology Logo" className="w-32" />
+                <img src="/nest-new.svg" alt="Novi Nest Psychology Logo" className="w-32" />
             </div>
 
             <div className="flex flex-col md:flex-row md:justify-start md:gap-24 gap-8 text-left md:text-left">
