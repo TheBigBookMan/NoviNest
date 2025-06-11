@@ -53,8 +53,8 @@ const FeesDesktop = () => {
                 </div>
 
                 {/* Hourly Rate */}
-                <div className="flex flex-col gap-4 bg-[#C4D7B2] p-8 rounded-xl shadow-md max-w-3xl border-l-4 border-[#B25D3E]">
-                    <h3 className="text-xl font-bold text-[#B25D3E]">Hourly rate: $240</h3>
+                <div className="flex flex-col gap-4 text-slate-100 bg-[#858D7E] p-8 rounded-xl shadow-md max-w-3xl border-l-4 border-[#B25D3E]">
+                    <h3 className="text-xl font-bold ">Hourly rate: $240</h3>
                     <p className='italic'>
                         (Set below the Australian Psychological Society's recommended fee of $311. Our goal
                         is to offer high-quality, specialist care while remaining mindful of affordability.)
