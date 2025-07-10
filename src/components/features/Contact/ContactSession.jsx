@@ -73,6 +73,16 @@ const ContactSection = () => {
                 alert("Failed to send message.");
                 setEmailStatus('idle');
             });
+
+        // Then trigger the Google Ads conversion event
+        if (typeof gtag !== "undefined") {
+            gtag("event", "conversion", {
+                send_to: "AW-17313674791",
+                event_callback: () => {
+                    console.log("Conversion sent to Google Ads");
+                },
+            });
+        }
     };
 
     return (
