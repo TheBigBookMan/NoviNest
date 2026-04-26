@@ -66,6 +66,8 @@ const Home = () => {
 
             <Services />
 
+            <Differences />
+
             <div className="relative w-full py-16 bg-[#F5F5F3]  overflow-hidden p-6 lg:px-40 ">
                 <video
                     controls
@@ -77,8 +79,6 @@ const Home = () => {
                     Your browser does not support the video tag.
                 </video>
             </div>
-
-            <Differences />
                 
             <div className="px-6 py-12 flex justify-center md:hidden">
                 <div className="relative w-full max-w-xs  bg-[#C4D7B2] rounded-t-[160px] rounded-b-2xl shadow-xl overflow-hidden aspect-w-4 aspect-h-3">
