@@ -62,6 +62,8 @@ const Home = () => {
 
             <Landing />
 
+            <Info />
+
             <div className="relative w-full py-16 bg-[#F5F5F3]  overflow-hidden p-6 lg:px-40 ">
                 <video
                     controls
@@ -73,8 +75,6 @@ const Home = () => {
                     Your browser does not support the video tag.
                 </video>
             </div>
-
-            <Info />
 
             <Differences />
                 

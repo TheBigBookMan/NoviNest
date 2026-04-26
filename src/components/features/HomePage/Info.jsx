@@ -11,32 +11,20 @@ const Info = () => {
                 id="info-heading"
                 className="text-3xl md:text-4xl font-cinzel text-[#B25D3E]"
                 >
-                Welcome to Novi Nest – Where Understanding Nurtures Growth
+                Welcome to Novi Nest - Where Understanding Nurtures Growth
                 </h2>
 
                 <div className="flex flex-col gap-4 text-sm md:text-base leading-relaxed">
                     <p>
-                        At <strong>Novi Nest Psychology</strong>, we help families and
-                        educators gain meaningful insight into the developmental profiles of
-                        children in their care. Through evidence-based assessments, we aim
-                        to highlight each child's strengths while identifying the support
-                        they need to thrive.
+                        <strong>Novi Nest Psychology is a Sydney-based clinical psychology practice specialising in cognitive, academic, ADHD, and autism assessments for children and adolescents.</strong> We offer mobile, school-based assessments across Sydney, as well as private assessments in Chatswood.
                     </p>
 
                     <p>
-                        We believe assessments should be <strong>accessible to all</strong>.
-                        That's why we conduct school-based assessments, allowing children to
-                        be seen in a familiar environment rather than a clinical setting. By
-                        reducing stress and increasing comfort, we ensure assessment outcomes
-                        that reflect your child's natural abilities and learning needs.
+                        At Novi Nest, we help families and educators gain clear insight into a child’s learning and developmental profile. Through evidence-based assessments, we identify strengths, learning differences, and support needs, including giftedness and neurodiversity (ADHD and autism).
                     </p>
 
                     <p>
-                        Our reports go beyond numbers—they provide{" "}
-                        <strong>clear, actionable recommendations</strong> that empower
-                        families and educators to support each child's development. At Novi
-                        Nest, our goal is simple: to foster understanding, unlock potential,
-                        and inform the way forward.
+                        We prioritise a child-centred approach by conducting assessments in familiar environments where possible, supporting more accurate and meaningful outcomes. Our reports go beyond scores, providing practical, individualised recommendations to guide the next steps at home and at school.
                     </p>
                 </div>
             </article>
