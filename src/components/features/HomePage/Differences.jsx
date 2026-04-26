@@ -55,7 +55,7 @@ const Differences = () => {
                     {
                         title: "Accessibility",
                         description:
-                        "We make assessments easier by meeting children where they are.",
+                        "We make assessments easier by conducting assessments at schools, where possible.",
                     },
                     {
                         title: "Collaborative Care",
