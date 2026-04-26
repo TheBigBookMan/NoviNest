@@ -64,6 +64,8 @@ const Home = () => {
 
             <Info />
 
+            <Services />
+
             <div className="relative w-full py-16 bg-[#F5F5F3]  overflow-hidden p-6 lg:px-40 ">
                 <video
                     controls
@@ -87,8 +89,6 @@ const Home = () => {
                     />
                 </div>
             </div>
-
-            <Services />
 
             <Contact />
 

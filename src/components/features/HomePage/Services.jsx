@@ -69,18 +69,28 @@ const Services = () => {
                 "A full psychoeducational assessment combines cognitive and academic assessments to provide a full picture of your child's learning profile, strengths, and support needs.",
         },
         {
-            title: "New Assessments Coming Soon!",
+            title: "Giftedness Assessment",
             description:
-                "We're currently working on expanding our services to include diagnostic Autism and ADHD assessments for children and families. Stay tuned for updates — we look forward to supporting you soon.",
+                "A giftedness assessment evaluates advanced cognitive ability and identifies areas of high potential. It provides insight into a child’s unique learning profile, supporting appropriate academic extension, school placement decisions, and tailored educational planning.",
+        },
+        {
+            title: "ADHD Assessment",
+            description:
+                "An ADHD assessment explores attention, impulse control, and executive functioning. Using a combination of standardised measures and behavioural information, it helps determine whether a child meets criteria for Attention-Deficit/Hyperactivity Disorder and outlines practical strategies to support functioning at home and school.",
+        },
+        {
+            title: "Autism Assessment",
+            description:
+                "An autism assessment evaluates social communication, behaviour patterns, and sensory processing. It provides a comprehensive understanding of a child’s strengths and differences, supporting diagnostic clarity and guiding appropriate supports and interventions.",
         },
     ];
 
     return (
-        <article id="services-article" aria-labelledby="services-heading" className="flex flex-col h-fit bg-[#F5F5F3] px-4 py-20 max-w-5xl mx-auto">
+        <article id="services-article" aria-labelledby="services-heading" className="flex flex-col h-fit bg-[#F5F5F3] px-4 sm:px-8 md:px-16 py-20 max-w-5xl">
             <h2 id="services-heading" className="text-3xl font-bold text-[#858D7E] font-cinzel">Our Services</h2>
 
             <ul className="md:hidden flex flex-col gap-4 mt-4 text-sm">
-                {services.slice(0, 3).map((service, idx) => (
+                {services.slice(0, 6).map((service, idx) => (
                     <li key={idx}>
                         <ServiceItem title={service.title} description={service.description} />
                     </li>
@@ -96,18 +106,6 @@ const Services = () => {
                     </div>
                 ))}
             </div>
-
-            <aside id="new-assessments-aside" aria-labelledby="new-assessments-heading" className="flex md:hidden flex-col items-center text-center px-6 py-6 max-w-2xl mx-auto bg-white rounded-lg shadow-md text-[#333] mt-12">
-                <h3 id="new-assessments-heading" className="text-2xl font-cinzel text-[#858D7E] mb-4">New Assessments Coming Soon!</h3>
-
-                <p className="text-lg font-playfair text-[#B25D3E] mb-6">We're excited to expand our services!</p>
-
-                <p className="text-sm leading-relaxed mb-4">
-                    We're currently working on expanding our services to include diagnostic Autism and ADHD assessments for children and families.
-                </p>
-
-                <p className="italic text-sm text-[#4B5563]">Stay tuned for updates — we look forward to supporting you soon.</p>
-            </aside>
         </article>
     );
 };
