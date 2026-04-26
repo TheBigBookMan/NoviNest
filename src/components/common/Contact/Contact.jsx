@@ -29,7 +29,7 @@ const Contact = () => {
                     <a href="mailto:hello@novinestpsychology.com.au" className="underline" aria-label="Email Novi Nest Psychology">
                         hello@novinestpsychology.com.au
                     </a>
-                    <address className="font-playfair not-italic">Based in Sydney, NSW, Australia</address>
+                    <address className="font-playfair not-italic">Consulting from Wattleseed Consulting Rooms at Suite 304/7 Help Street, Chatswood, NSW</address>
                 </div>
 
                 <div className="flex flex-col gap-2">
