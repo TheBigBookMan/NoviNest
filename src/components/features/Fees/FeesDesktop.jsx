@@ -103,7 +103,7 @@ const FeesDesktop = () => {
                 </div>
 
                 {/* Outreach Section */}
-                <div className="flex flex-col gap-6 bg-[#F5F5F3] p-8 rounded-xl shadow-md max-w-3xl border-l-4 border-[#B25D3E]">
+                {/* <div className="flex flex-col gap-6 bg-[#F5F5F3] p-8 rounded-xl shadow-md max-w-3xl border-l-4 border-[#B25D3E]">
                     <h3 className="font-cinzel text-lg text-[#858D7E]">Outreach and Travel</h3>
                     <p>
                         We offer mobile assessments, typically conducted at your child's school or learning centre.
@@ -117,7 +117,7 @@ const FeesDesktop = () => {
                         All travel arrangements and fees are confirmed in advance. Unsure if your area is local?
                         Reach out for a quick estimate.
                     </p>
-                </div>
+                </div> */}
 
                 <Contact />
             </section>

@@ -21,7 +21,7 @@ const Fees = () => {
 
                 <Packages />
 
-                <Outreach />
+                {/* <Outreach /> */}
 
                 <Contact />
 
