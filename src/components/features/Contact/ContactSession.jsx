@@ -133,7 +133,7 @@ const ContactSection = () => {
                 <div>
                     <label className="block mb-1 font-medium">Assessment Type <span className="text-red-500">*</span></label>
                     <div className="flex flex-col gap-2 pl-1">
-                        {['Cognitive / IQ Assessment', 'Educational / Learning Assessment', 'Full Psychoeducational Assessment', 'Not sure yet'].map((type) => (
+                        {['Cognitive / IQ Assessment', 'Educational / Learning Assessment', 'Full Psychoeducational Assessment', 'Giftedness Assessment', 'ADHD Assessment', 'Autism Assessment', 'Not sure yet'].map((type) => (
                             <label key={type}>
                                 <input type="checkbox" className="mr-2" onChange={() => handleCheckboxChange(type)} checked={form.assessmentType.includes(type)} />{type}
                             </label>

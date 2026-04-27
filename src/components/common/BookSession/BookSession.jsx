@@ -214,6 +214,33 @@ const BookSession = ({onClose}) => {
                                 <input
                                     type="checkbox"
                                     className="mr-2"
+                                    onChange={() => handleCheckboxChange("Giftedness Assessment")}
+                                    checked={form.assessmentType.includes("Giftedness Assessment")}
+                                />
+                                Giftedness Assessment
+                            </label>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    className="mr-2"
+                                    onChange={() => handleCheckboxChange("ADHD Assessment")}
+                                    checked={form.assessmentType.includes("ADHD Assessment")}
+                                />
+                                ADHD Assessment
+                            </label>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    className="mr-2"
+                                    onChange={() => handleCheckboxChange("Autism Assessment")}
+                                    checked={form.assessmentType.includes("Autism Assessment")}
+                                />
+                                Autism Assessment
+                            </label>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    className="mr-2"
                                     onChange={() => handleCheckboxChange("Not sure yet")}
                                     checked={form.assessmentType.includes("Not sure yet")}
                                 />
