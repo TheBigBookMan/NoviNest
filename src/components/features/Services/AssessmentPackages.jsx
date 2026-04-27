@@ -112,6 +112,48 @@ const AssessmentPackagesDesktop = () => {
                 "Feedback session with child/adolescent (if appropriate)",
             ],
         },
+        {
+            title: "Giftedness Assessment",
+            description:
+                "A giftedness assessment uses the WISC-V to evaluate advanced cognitive ability and identify areas of high potential. This assessment supports decisions around selective school placement, academic extension, and tailored educational planning.",
+            includes: [
+                "Parent interview",
+                "1:1 child assessment session utilising the WISC-V",
+                "In-depth scoring and professional interpretation",
+                "Comprehensive written report",
+                "Online feedback session with parents/caregivers",
+                "Feedback session with child/adolescent (if appropriate)",
+                "Additional screening measures (if indicated)"
+            ],
+        },
+        {
+            title: "ADHD Assessment",
+            description:
+                "An ADHD assessment explores attention, impulse control, and executive functioning to determine whether a child meets criteria for Attention-Deficit/Hyperactivity Disorder.",
+            includes: [
+                "DIVA-5 structured diagnostic interview with parent and child/adolescent",
+                "Standardised ADHD screening questionnaires",
+                "Consultation with educators or other support professionals (if indicated)",
+                "In-depth scoring and clinical interpretation",
+                "Comprehensive written report",
+                "Online feedback session with parents/caregivers",
+                "Feedback session with child/adolescent (if appropriate)"
+            ],
+        },
+        {
+            title: "Autism Assessment",
+            description:
+                "An autism assessment provides a comprehensive evaluation of social communication, behaviour patterns, and developmental history to determine whether a child meets criteria for Autism Spectrum Disorder.",
+            includes: [
+                "ADI-R structured developmental interview with parent",
+                "Child assessment session utilising the ADOS-2 (parent present depending on child's age)",
+                "Consultation with educators or other support professionals (if indicated)",
+                "In-depth scoring and clinical interpretation",
+                "Comprehensive written report",
+                "Online feedback session with parents/caregivers",
+                "Feedback session with child/adolescent (if appropriate)"
+            ],
+        },
     ];
 
     return (

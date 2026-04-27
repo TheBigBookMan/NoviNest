@@ -11,26 +11,28 @@ const CognitiveAssessment = () => {
                         id="cognitive-assessment-heading"
                         className="text-2xl md:text-3xl font-cinzel text-[#B25D3E] mb-4"
                     >
-                        Is a Cognitive or Academic Assessment Right for Your Child?
+                        Is an Assessment Right for Your Child?
                     </h3>
 
                     <p className="text-sm md:text-base leading-relaxed text-[#4B5563]">
-                        If you've been wondering whether a cognitive or academic assessment might support your child or adolescent, consider the questions below:
+                        If you’ve been wondering whether an assessment might support your child or adolescent, consider these questions:
                     </p>
                 </div>
 
                 <div className="md:w-1/2 flex flex-col gap-6 text-sm md:text-base leading-relaxed text-[#4B5563]">
                     <ul className="flex flex-col gap-4 pl-6">
                         <li className="list-disc">Are they finding it difficult to keep up with learning or schoolwork?</li>
-                        <li className="list-disc">Do you suspect they may have a Specific Learning Disorder, such as dyslexia, dysgraphia, or dyscalculia?</li>
-                        <li className="list-disc">Are there noticeable differences between their potential and their academic performance?</li>
+                        <li className="list-disc">Do you suspect a Specific Learning Disorder, such as dyslexia, dysgraphia, or dyscalculia?</li>
+                        <li className="list-disc">Are there noticeable differences between their potential and academic performance?</li>
                         <li className="list-disc">Are they being considered for a gifted program or selective school placement?</li>
-                        <li className="list-disc">Have their teachers raised concerns about attention, working memory, or processing speed?</li>
-                        <li className="list-disc">Would you like to better understand how your child learns and how to support them to thrive?</li>
+                        <li className="list-disc">Have concerns been raised about attention, focus, or executive functioning (e.g., ADHD)?</li>
+                        <li className="list-disc">Do you have questions about possible autism or differences in social communication?</li>
+                        <li className="list-disc">Are there challenges with emotional regulation, behaviour, or sensory sensitivities? </li>
+                        <li className="list-disc">Would you like a clearer understanding of how your child learns, thinks, and develops?</li>
                     </ul>
 
                     <p>
-                        If you answered yes to any of the above, a cognitive and/or academic assessment may offer the clarity, insight, and direction you're seeking. These assessments explore your child's unique learning profile and provide practical, tailored recommendations to support their educational and emotional wellbeing—at school and at home.
+                        If you answered yes to any of the above, an assessment can provide clarity and direction. Our assessments explore your child’s cognitive, academic, and developmental profile, helping to identify learning differences, giftedness, and neurodevelopmental conditions such as ADHD and autism, while offering practical, tailored recommendations to support them at school and at home.
                     </p>
                 </div>
             </div>
