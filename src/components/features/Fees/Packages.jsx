@@ -53,6 +53,18 @@ const Packages = () => {
                         label: "Consultation with Schools or Allied Health Providers",
                         price: "$60 per 15 minutes",
                     },
+                    { 
+                        label: "Giftedness Assessment Package", 
+                        price: "$1440" 
+                    },
+                    { 
+                        label: "ADHD Assessment Package",
+                        price: "$1680"
+                    },
+                    { 
+                        label: "Autism Assessment Package", 
+                        price: "$2400" 
+                    },
                 ].map((pkg, idx) => (
                     <motion.li
                         key={idx}
