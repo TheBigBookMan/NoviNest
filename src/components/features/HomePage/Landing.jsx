@@ -20,7 +20,7 @@ const Landing = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: 'easeOut' }}
-                className="relative z-20 font-playfair text-3xl md:text-5xl text-left -mt-20 text-slate-100 px-4 md:px-40 leading-tight"
+                className="relative z-20 font-playfair text-3xl md:text-5xl text-left -mt-20 text-slate-100 px-6 md:px-40 leading-tight"
                 >
                 <span className="block mb-2">
                     Cognitive, Academic, and Developmental Assessments for Children
