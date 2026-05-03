@@ -6,7 +6,7 @@ const CognitiveGuideContent = () => (
             </p>
 
             <p>
-                A cognitive assessment, often referred to as an IQ assessment, is conducted by a psychologist to better understand a child's thinking and learning profile. In Sydney, these assessments are commonly used to explore learning difficulties, identify giftedness, and guide educational planning.
+                A <strong>cognitive assessment</strong>, often referred to as an IQ assessment, is conducted by a <strong>psychologist</strong> to better understand a child's thinking and learning profile. In Sydney, these assessments are commonly used to explore learning difficulties, identify giftedness, and guide educational planning.
             </p>
 
             <hr className="border-slate-200 my-8" />
@@ -30,7 +30,7 @@ const CognitiveGuideContent = () => (
                 <h3 className="text-xl md:text-2xl font-cinzel text-[#B25D3E] mb-4">Signs Your Child May Benefit from a Cognitive Assessment</h3>
                 <h4 className=" text-sm italic">You might consider a cognitive assessment if you've noticed:</h4>
 
-                <ul className='flex flex-col gap-3 mt-4'>
+                <ul className='flex flex-col gap-3 lg:gap-6 mt-4'>
                     <li className='flex flex-col'>
                         <p className="text-[#B25D3E]/80 font-bold">1. <i>Difficulties with learning or schoolwork</i></p>
                         <p className="text-sm pl-2">Your child may be struggling to keep up academically, despite putting in effort. A cognitive assessment can help identify underlying learning differences that may be impacting their progress.</p>
@@ -45,7 +45,7 @@ const CognitiveGuideContent = () => (
                     </li>
                     <li className='flex flex-col'>
                         <p className="text-[#B25D3E]/80 font-bold">4. <i>Consideration for gifted programs or selective school placement</i></p>
-                        <p className="text-sm pl-2">Cognitive assessments are commonly used to assess eligibility for gifted and talented programs or selective schooling pathways in Sydney.</p>
+                        <p className="text-sm pl-2">Cognitive assessments are commonly used to assess eligibility for <strong>gifted and talented programs</strong> or selective schooling pathways in Sydney.</p>
                     </li>
                     <li className='flex flex-col'>
                         <p className="text-[#B25D3E]/80 font-bold">5. <i>Attention, memory, or processing concerns</i></p>
