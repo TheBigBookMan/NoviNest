@@ -14,7 +14,7 @@ const Blog = () => {
 
             {/* Dynamic Tiles Section */}
             <div className="pb-20">
-                <BlogTile subtitle={"A Guide for Sydney Parents"} title={"When Is a Cognitive Assessment Right for Your Child? "} imageSrc="/public/blog-1.jpg" imageAlt="Child learning support Sydney">
+                <BlogTile subtitle={"A Guide for Sydney Parents"} title={"When Is a Cognitive Assessment Right for Your Child? "} imageSrc="blog-1.jpg" imageAlt="Child learning support Sydney">
                     <CognitiveGuideContent />
                 </BlogTile>
             </div>
